@@ -1,4 +1,9 @@
 /*=============
+Pagina PRINCIPAL
+===============*/
+
+
+/*=============
 Reset 
 ===============*/
 *{
@@ -206,8 +211,6 @@ colecciones,titulo
 
 }
 
-
-
 .tarjeta-coleccion {
     flex: 1;
     max-width: 280px;
@@ -272,3 +275,8 @@ foto de cada tarjeta
     background-color: #003b2d;
     color:#f5ead7;
 }
+
+
+/*=============
+Pagina NOSOTROS
+===============*/
