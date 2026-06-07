@@ -225,14 +225,16 @@ cada tarjeta individual
 ======================*/
 .tarjetas-coleccion {
     flex: 1;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+    max-width: 280px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 /*==================
 foto de cada tarjeta
-*/
+===================*/
 .tarjeta-coleccion img {
     width: 100%;
     height: 200px;
