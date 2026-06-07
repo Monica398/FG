@@ -64,7 +64,14 @@ Cambia color al pasar el mouse
     font-size: 14px;
     font-weight: bold;
     letter-spacing: 1px;
+    transition: 0.3s;
 }
+.menu a:hover{
+    color: #c7d39f;
+    border-bottom: 2px solid #c7d39f;
+    padding-bottom: 5px;
+}
+
 /*=============
 Confi de los iconos de la barra
 ===============*/
@@ -78,8 +85,11 @@ Confi de los iconos de la barra
     background: none;
     border: none;
     cursor: pointer;
+    transition: 0.3s;
 }
-
+.iconos button:hover{
+    transform: scale(1.1);
+}
 .iconos img{
     width: 30px;
 }
