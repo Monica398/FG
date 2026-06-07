@@ -97,7 +97,9 @@ Confi de la imagen del arbol de cerezos
     margin-bottom: 40px;
     width: 600px;
 }
-
+/*=============
+Confi de los botones en la imagen principal
+===============*/
 .botones{
     display: flex;
     gap: 20px;
