@@ -219,9 +219,6 @@ colecciones,titulo
     transition: 0.3s;
 }
 
-.tarjeta-coleccion:hover {
-    transform: translateY(-10px);
-}
 /*================
 cada tarjeta individual
 ======================*/
@@ -246,6 +243,10 @@ foto de cada tarjeta
 /* Parte inferior de la tarjeta con nombre y enlace */
 .tarjeta-info {
     padding: 20px;
+    transition: 0.3s;
+}
+.tarjeta-coleccion:hover .tarjeta-info{
+    transform: translateY(-10px);
 }
 
 .tarjeta-info h3 {
