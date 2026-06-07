@@ -154,25 +154,3 @@ Confi del cuadro verde
 .beneficio p{
     font-size: 14px;
 }
-/*=============
-Confi del texto antes de los botones principales
-===============*/
-.colecciones{
-    text-align: center;
-    padding: 70px 20px;
-    background-color: #f5ead7;
-}
-
-.colecciones h2{
-    font-size: 60px;
-    color: #003b2d;
-    font-family: Georgia, serif;
-    margin-bottom: 15px;
-}
-
-.linea{
-    width: 90px;
-    height: 2px;
-    background-color: #d8c6b0;
-    margin: 0 auto;
-}
