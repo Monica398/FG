@@ -66,6 +66,24 @@ Cambia color al pasar el mouse
     letter-spacing: 1px;
 }
 /*=============
+Confi de los iconos de la barra
+===============*/
+.iconos{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.iconos button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.iconos img{
+    width: 30px;
+}
+/*=============
 Confi de la imagen del arbol de cerezos
 ===============*/
 .cerezos{
