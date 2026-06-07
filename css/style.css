@@ -212,29 +212,26 @@ colecciones,titulo
 }
 
 .tarjeta-coleccion {
-    flex: 1;
-    max-width: 280px;
-    border-radius: 12px;
-    overflow: hidden;
-    cursor: pointer
-
-}
-
-/*================
-cada tarjeta individual
-======================*/
-.tarjetas-coleccion {
     width: 280px;
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
-    /*hace que el movimiento sea suave*/
     transition: 0.3s;
 }
-.tarjeta-coleccion:hover{
-    /*mueve la tarjeta un poquito hacia arriba cuando pasan el mouse*/
+
+.tarjeta-coleccion:hover {
     transform: translateY(-10px);
 }
+/*================
+cada tarjeta individual
+======================*/
+
+.tarjetas-coleccion {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
 /*==================
 foto de cada tarjeta
 */
