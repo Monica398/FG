@@ -229,7 +229,11 @@ cada tarjeta individual
     border-radius: 12px;
     overflow: hidden;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s;/*hace que el movimiento sea suave*/
+}
+.tarjeta-coleccion:hover{
+    /*mueve la tarjeta un poquito hacia arriba cuando pasan el mouse*/
+    transform: translateY(-10px);
 }
 
 /*==================
