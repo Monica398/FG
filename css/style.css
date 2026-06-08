@@ -323,3 +323,49 @@ Pagina NOSOTROS
     object-fit: cover;
     border-radius: 6px;
 }
+
+/*=============
+FOOTER
+===============*/
+.footer{
+    background-color: #003b2d;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/*=============
+ENLACES DEL FOOTER
+===============*/
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.footer-links h3{
+    color: #f5ead7;
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family: Georgia, serif;
+}
+
+.footer-links a{
+    color: #c7d39f;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+    color: white;
+}
+/*=============
+TEXTO FINAL con el c de marca registrada
+===============*/
+.copy{
+    color: #f5ead7;
+    font-size: 13px;
+    margin-top: 20px;
+}
