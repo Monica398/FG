@@ -324,36 +324,20 @@ Pagina NOSOTROS
     border-radius: 6px;
 }
 /*=============
-CONTACTO
+CONTACTO EN NOSOTROS
 ===============*/
-.contacto{
-    background-color: #f5ead7;
-    padding: 80px 120px;
+.contacto-nosotros{
+    margin-top: 35px;
 }
 
-.item-contacto{
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-.item-contacto img{
-    width: 90px;
-}
-
-.item-contacto h3{
+.contacto-nosotros p{
+    font-size: 15px;
+    line-height: 32px;
     color: #003b2d;
-    font-family: Georgia, serif;
-    font-size: 38px;
-    font-weight: normal;
-    margin-bottom: 10px;
 }
 
-.item-contacto p{
-    color: #6d563f;
-    font-size: 22px;
-    line-height: 35px;
+.contacto-nosotros strong{
+    font-weight: bold;
 }
 
 /*=============
