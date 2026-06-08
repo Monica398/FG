@@ -290,11 +290,11 @@ Pagina NOSOTROS
     align-items: center;
     justify-content: space-between;
     gap: 1200px;
-    padding: 70px 120px;
+    padding: 70px 80px;
 }
 
 .texto-nosotros{
-    width: 450px;
+    width: 350px;
     color: #003b2d;
 }
 
@@ -318,7 +318,7 @@ Pagina NOSOTROS
 }
 
 .imagen-nosotros img{
-    width: 700px;
+    width: 470px;
     height: 220px;
     object-fit: cover;
     border-radius: 6px;
