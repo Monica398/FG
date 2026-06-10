@@ -1,21 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Sakura</title>
+
+```
+<!-- ===================================================== -->
+<!-- CONFIGURACIÓN GENERAL DE LA PÁGINA -->
+<!-- ===================================================== -->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CONEXIÓN DEL ARCHIVO CSS -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- TÍTULO DE LA PÁGINA -->
+<title>Sakura</title>
+```
+
 </head>
+
 <body>
+
+```
+<!-- ===================================================== -->
+<!-- HEADER / BARRA DE NAVEGACIÓN -->
+<!-- ===================================================== -->
 
 <header class="header">
 
+    <!-- LOGO -->
     <div class="logo">
         <h1>Sakura</h1>
         <p>LA FLORISTERÍA</p>
     </div>
-<!--CONFI DE LA BARRA DEL MENU -->
-    <nav class="menu"> 
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="menu">
+
         <ul>
             <li><a href="index.html">INICIO</a></li>
             <li><a href="ramos.html">RAMOS</a></li>
@@ -24,169 +47,238 @@
             <li><a href="detalles.html">DETALLES</a></li>
             <li><a href="#nosotros">NOSOTROS</a></li>
         </ul>
-    </nav>
-<!-- CONFI DE LOS ICONOS DE LA BARRA DEL MENU -->
-    <div class="iconos">
 
+    </nav>
+
+    <!-- ICONOS DEL MENÚ -->
+    <div class="iconos">
+        <!-- ICONO USUARIO -->
         <button>
             <img src="assets/images/person.png" alt="Usuario">
         </button>
-
+        <!-- ICONO FAVORITOS -->
         <button>
             <img src="assets/images/heart-barra.png" alt="Favoritos">
         </button>
-
+        <!-- ICONO CARRITO -->
         <button>
             <img src="assets/images/shopping-cart.png" alt="Carrito">
         </button>
-
     </div>
+
 </header>
 
-<!--CONFI DE LA IMAGEN CEREZOS-->
+<!-- ===================================================== -->
+<!-- CONTENIDO PRINCIPAL -->
+<!-- ===================================================== -->
+
 <main>
+
+    <!-- ===================================================== -->
+    <!-- IMAGEN PRINCIPAL / HERO -->
+    <!-- ===================================================== -->
+
     <section class="cerezos">
+
         <div class="contenido-cerezos">
 
+            <!-- TÍTULO PRINCIPAL -->
             <h1>Flores que<br>cuentan historias</h1>
 
+            <!-- TEXTO PRINCIPAL -->
             <p>
                 En Sakura, cada flor es elegida con amor
                 para transmitir emociones y crear momentos
                 inolvidables.
             </p>
 
+            <!-- BOTONES PRINCIPALES -->
             <div class="botones">
-                <a href="#" class="btn btn-ver">VER RAMOS</a>
 
+                <a href="#" class="btn btn-ver">
+                    VER RAMOS
+                </a>
                 <a href="#" class="btn btn-nosotros">
                     SOBRE NOSOTROS
                 </a>
             </div>
-
         </div>
     </section>
 
-    <!-- BARRA VERDE -->
+    <!-- ===================================================== -->
+    <!-- BARRA DE BENEFICIOS -->
+    <!-- ===================================================== -->
+
     <section class="beneficios">
 
-    <div class="beneficio">
-        <img src="assets/images/leaf.png" alt="Hoja">
+        <!-- BENEFICIO 1 -->
+        <div class="beneficio">
 
-        <h3>FLORES FRESCAS</h3>
+            <img src="assets/images/leaf.png" alt="Hoja">
+            <h3>FLORES FRESCAS</h3>
+            <p>Seleccionadas cada día</p>
+        </div>
 
-        <p>Seleccionadas cada día</p>
-    </div>
+        <!-- BENEFICIO 2 -->
+        <div class="beneficio">
 
-    <div class="beneficio">
-        <img src="assets/images/truck.png" alt="Envío">
+            <img src="assets/images/truck.png" alt="Envío">
+            <h3>ENVÍOS A DOMICILIO</h3>
+            <p>Rápidos y seguros</p>
+        </div>
 
-        <h3>ENVÍOS A DOMICILIO</h3>
+        <!-- BENEFICIO 3 -->
+        <div class="beneficio">
 
-        <p>Rápidos y seguros</p>
-    </div>
+            <img src="assets/images/flower.png" alt="Flor">
+            <h3>DISEÑOS ÚNICOS</h3>
+            <p>Hechos con creatividad</p>
+        </div>
 
-    <div class="beneficio">
-        <img src="assets/images/flower.png" alt="Flor">
+        <!-- BENEFICIO 4 -->
+        <div class="beneficio">
 
-        <h3>DISEÑOS ÚNICOS</h3>
+            <img src="assets/images/heart.png" alt="Corazón">
+            <h3>ATENCIÓN PERSONALIZADA</h3>
+            <p>Estamos para ayudarte</p>
+        </div>
+    </section>
 
-        <p>Hechos con creatividad</p>
-    </div>
+    <!-- ===================================================== -->
+    <!-- COLECCIONES -->
+    <!-- ===================================================== -->
 
-    <div class="beneficio">
-        <img src="assets/images/heart.png" alt="Corazón">
+    <section class="colecciones">
 
-        <h3>ATENCIÓN PERSONALIZADA</h3>
+        <!-- TÍTULO -->
+        <div class="titulo-seccion">
+            <h2>Descubre nuestras colecciones</h2>
+        </div>
 
-        <p>Estamos para ayudarte</p>
-    </div>
+        <!-- TARJETAS -->
+        <div class="tarjetas-coleccion">
 
-</section>
-<!-- CONFI BOTONES CON COLOR E IMAGENES -->
-<section class="colecciones">
-            <div class="titulo-seccion">
-                <h2> Descubre nuestras colecciones</h2>
+            <!-- TARJETA 1 -->
+            <div class="tarjeta-coleccion">
+
+                <img src="assets/images/ramo_beige.png" alt="Ramos">
+                <div class="tarjeta-info tarjeta-rosa">
+                    <h3>Ramos</h3>
+                    <p>VER COLECCIÓN</p>
+                </div>
             </div>
-            <div class="tarjetas-coleccion">
-                <div class="tarjeta-coleccion">
-                    <img src="assets/images/ramo_beige.png" alt="Ramos">
-                    <div class="tarjeta-info tarjeta-rosa">
-                        <h3>Ramos</h3>
-                        <p> VER COLECCIÓN</p>
-                    </div>
-                </div>
 
-                <div class="tarjeta-coleccion">
-                    <img src="assets/images/rosas.jpg" alt="Armar ramo">
-                    <div class="tarjeta-info tarjeta-verde">
-                        <h3>Armar ramo</h3>
-                        <p> VER COLECCIÓN</p>
-                    </div>
-                </div>
+            <!-- TARJETA 2 -->
+            <div class="tarjeta-coleccion">
 
-                <div class="tarjeta-coleccion">
-                    <img src="assets/images/flores.jpg" alt="Ocasiones">
-                    <div class="tarjeta-info tarjeta-crema">
+                <img src="assets/images/rosas.jpg" alt="Armar ramo">
+                <div class="tarjeta-info tarjeta-verde">
+                    <h3>Armar ramo</h3>
+                    <p>VER COLECCIÓN</p>
+                </div>
+            </div>
+
+            <!-- TARJETA 3 -->
+            <div class="tarjeta-coleccion">
+
+                <img src="assets/images/flores.jpg" alt="Ocasiones">
+                <div class="tarjeta-info tarjeta-crema">
                     <h3>Ocasiones</h3>
-                    <p> VER COLECCIÓN</p>
-                </div>
-                </div>
-
-                <div class="tarjeta-coleccion">
-                    <img src="assets/images/peluche.jpg" alt="Peluches">
-                    <div class="tarjeta-info tarjeta-beige">
-                        <h3>Peluches</h3>
-                        <p> VER COLECCIÓN</p>
-                    </div>
+                    <p>VER COLECCIÓN</p>
                 </div>
             </div>
-        </section>
-<!-- CONFI DE LA PARTE DE NOSOTROS  -->
-        <section id="nosotros" class="nosotros">
-            <div class="texto-nosotros">
-            <p class="subtitulo">NOSOTROS</p> 
-            <h2>Más que flores,<br>creamos emociones</h2>
-        <p>
-            En Sakura, creemos que cada flor tiene el poder de transmitir
-            sentimientos y crear recuerdos inolvidables. Nos apasiona lo que
-            hacemos y ponemos el corazón en cada detalle.
+
+            <!-- TARJETA 4 -->
+            <div class="tarjeta-coleccion">
+
+                <img src="assets/images/peluche.jpg" alt="Peluches">
+                <div class="tarjeta-info tarjeta-beige">
+                    <h3>Peluches</h3>
+                    <p>VER COLECCIÓN</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- SECCIÓN NOSOTROS -->
+    <!-- ===================================================== -->
+
+    <section id="nosotros" class="nosotros">
+
+        <!-- TEXTO -->
+        <div class="texto-nosotros">
+
+            <p class="subtitulo">NOSOTROS</p>
+            <h2>
+                Más que flores,<br>
+                creamos emociones
+            </h2>
+
+            <p>
+                En Sakura, creemos que cada flor tiene el poder de transmitir
+                sentimientos y crear recuerdos inolvidables. Nos apasiona lo que
+                hacemos y ponemos el corazón en cada detalle.
+            </p>
+
+            <!-- ===================================================== -->
+            <!-- INFORMACIÓN DE CONTACTO -->
+            <!-- ===================================================== -->
+            
+            <div class="contacto-nosotros">
+
+                <p>
+                    <strong>Dirección:</strong>
+                    San José, Costa Rica
+                </p>
+                <p>
+                    <strong>Teléfono:</strong>
+                    +506 8888 8888
+                </p>
+                <p>
+                    <strong>Correo:</strong>
+                    sakurafloristeri@gmail.com
+                </p>
+                <p>
+                    <strong>Horario:</strong>
+                    Lunes a Sábado 9:00 a.m - 5:00 p.m
+                </p>
+            </div>
+        </div>
+
+        <!-- IMAGEN -->
+        <div class="imagen-nosotros">
+            <img src="assets/images/nosotros.png"
+                alt="Persona preparando un ramo">
+        </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- FOOTER -->
+    <!-- ===================================================== -->
+
+    <footer class="footer">
+
+        <!-- ENLACES -->
+        <div class="footer-links">
+
+            <h3>Enlaces rápidos</h3>
+            <a href="index.html">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#">Ramos</a>
+            <a href="#">Ocasiones</a>
+
+        </div>
+        <!-- COPYRIGHT -->
+        <p class="copy">
+            © 2026 Sakura Floristería - Todos los derechos reservados
         </p>
-        <!-- CONFI DE LA PARTE DE NOSOTROS PERO DE CONTACTOO  -->
-        <div class="contacto-nosotros">
-        <p><strong>Dirección:</strong> San José, Costa Rica</p>
-        <p><strong>Teléfono:</strong> +506 8888 8888</p>
-        <p><strong>Correo:</strong> sakurafloristeri@gmail.com</p>
-        <p><strong>Horario:</strong> Lunes a Sábado 9:00 a.m - 5:00 p.m</p>
-    </div>
-    </div>
-    <div class="imagen-nosotros">
-        <img src="assets/images/nosotros.png" alt="Persona preparando un ramo">
-    </div>
-
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-
-    <div class="footer-links">
-
-        <h3>Enlaces rápidos</h3>
-
-        <a href="index.html">Inicio</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#">Ramos</a>
-        <a href="#">Ocasiones</a>
-
-    </div>
-
-    <p class="copy">
-        © 2026 Sakura Floristería - Todos los derechos reservados
-    </p>
-
-</footer>
-
+    </footer>
 </main>
-
 </body>
 </html>
+
+
+<!-- H1 → nombre del libro
+H2 → capítulos
+H3 → subtítulos dentro del capítulo -->
