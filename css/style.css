@@ -6,186 +6,305 @@ Pagina PRINCIPAL
 /*=============
 Reset 
 ===============*/
-*{
+/*Quita los espacios que el navegador pone por defecto = *{  */
+* {
+    /* margin: 0; y padding: 0; = "Quiten TODOS los espacios automáticos"-->
+    /* espacio entre un elemento y otros elementos(por fuera) */
     margin: 0;
+    /* Es el espacio entre el contenido y el borde(por dentro) */
     padding: 0;
+    /* Hace que el padding y el borde no aumenten el tamaño total del elemento */
     box-sizing: border-box;
 }
+
 /*=============
 Body
 ===============*/
-body{
+body {
+    /* Define el tipo de letra principal de toda la página */
     font-family: Arial, Helvetica, sans-serif;
+    /* Define el color de fondo de la página */
     background-color: #f5ead7;
 }
+
 /*=============
-Header
+Header/ ES la barra principal de mi pagina osea la que esta arriba con todo
 ===============*/
-.header{
+.header {
+    /*Hace que el header ocupe todo el ancho de la pantalla*/
     width: 100%;
+    /*Cambia el color de fondo del header (verde oscuro)*/
     background-color: #003b2d;
-    /* Flexbox sirve para acomodar el logo y el menú */
+    /* Flexbox sirve para acomodar el logo,el menú y iconos */
     display: flex;
-    /* Separa el logo y el menú */
-    justify-content: space-between;   
-    /* Centra las cosas verticalmente */
+    /* Separa el logo y el menu (Separa los elementos horizontalmente) */
+    justify-content: space-between;
+    /* Centra las cosas verticalmente,osea que todo quede alineado bonito en la misma altura */
     align-items: center;
+    /* Es el espacio entre el contenido y el borde*/
     padding: 20px 60px;
 }
+
 /*=============
 Logo
 ===============*/
-.logo h1{
+
+/*<div class="logo">
+    <h1>Sakura</h1>
+</div>*/
+.logo h1 {
+    /*color de las letras del tituolo sakura */
     color: #f5ead7;
+    /*tamano de la letra*/
     font-size: 65px;
+    /*tipo de letra*/
     font-family: Georgia, serif;
+    /*quita la negrita porquelos h1 normalmente vienen en bold automáticamente.*/
     font-weight: normal;
+    /*Controla el espacio vertical entre líneas es este caso entre 
+    <h1>
+    Sakura
+    Floristería
+    </h1>*/
     line-height: 55px;
 }
 
-.logo p{
+/*<p>LA FLORISTERÍA</p>*/
+.logo p {
+    /*color de letra*/
     color: #f5ead7;
+    /*Cambia tamano de la letra*/
     font-size: 12px;
+    /*Separa las letras entre sí. Ejm:F L O R I S T E R I A*/
     letter-spacing: 4px;
+    /*Mueve el texto un poquito hacia la derecha*/
     margin-left: 6px;
 }
+
 /*=============
 Menu de navegación
 ===============*/
-.menu ul{   
-    /* Flexbox sirve para poner el menú horizontal */
+
+/*<nav class="menu">
+    <ul>*/
+.menu ul {
+    /* Hace que las opciones del menú salgan en fila. EJM: INICIO   RAMOS   OCASIONES   NOSOTROS*/
     display: flex;
+    /*Quita los puntitos automáticos de la lista*/
     list-style: none;
-    /* Da el espacio entre opciones */
+    /*Agrega separación entre cada opción del menú. */
     gap: 35px;
 }
+
 /*=============
 Cambia color al pasar el mouse
 ===============*/
-.menu a{
+
+/*<a href="index.html">INICIO</a>*/
+.menu a {
     color: #f5ead7;
+    /*Quita la línea automática de los enlaces*/
     text-decoration: none;
+    /*Cambio el tamano de la letra*/
     font-size: 14px;
+    /*Pone el texto en negrita*/
     font-weight: bold;
+    /*Separa un poquito las letras*/
     letter-spacing: 1px;
+    /*Hace que los cambios sean suaves*/
     transition: 0.3s;
 }
-.menu a:hover{
+
+.menu a:hover {
+    /*Cambia el color del texto cuando pasan el mouse (beige a verde)*/
     color: #c7d39f;
-    border-bottom: 2px solid #c7d39f;
+    /*Agrega una línea debajo del texto*/
+    border-bottom: 2px/*grosor de la línea*/ solid /*tipo de línea sólida*/ #c7d39f /*color de la línea*/;
+    /*Agrega espacio abajo del texto*/
     padding-bottom: 5px;
 }
 
 /*=============
 Confi de los iconos de la barra
 ===============*/
-.iconos{
+
+/*<div class="iconos">*/
+.iconos {
+    /*Hace que los iconos salgan en fila horizontal*/
     display: flex;
+    /*Centra los iconos verticalmente.   Sirve para que:todos queden alineados a la misma altura,y no uno más arriba que otro.*/
     align-items: center;
+    /*Agrega espacio entre cada icono*/
     gap: 20px;
 }
 
-.iconos button{
+.iconos button {
+    /*Quita el fondo automático del botón,si no lo pnemos sale el boton gris y feo*/
     background: none;
+    /*Quita el borde automático del botón*/
     border: none;
+    /*Cambia el cursor cuando pasas el mouse ,osea sale la manita*/
     cursor: pointer;
+    /*Hace suaves las animaciones*/
     transition: 0.3s;
 }
-.iconos button:hover{
-    transform: scale(1.1);
+
+.iconos button:hover {
+    transform/*sirve para transformar o mover elementos*/: scale(1.1);
+    /*scale es para q se hagan mas grande y 1 = tamaño normal y el 1.1 = 10% más grande*/
 }
-.iconos img{
+
+.iconos img {
+    /*Define el ancho de las imágenes*/
     width: 30px;
 }
+
 /*=============
 Confi de la imagen del arbol de cerezos
 ===============*/
-.cerezos{
+
+/*<section class="cerezos">*/
+.cerezos {
+    /*Hace que la sección ocupe todo el ancho de la pantalla*/
     width: 100%;
+    /*Define la altura de la sección.*/
     height: 650px;
+    /* los .. son un "sube una carpeta"*/
     background-image: url("../assets/images/cerezos.png");
+    /*Hace que la imagen cubra toda la sección*/
     background-size: cover;
-    /*cubra toda la sección*/
+    /*Centra la imagen*/
     background-position: center;
     /*Para que no se repita la imagen*/
     background-repeat: no-repeat;
 }
-.contenido-cerezos{
+
+/*<div class="contenido-cerezos">    lo que esta encima de la imagen*/
+.contenido-cerezos {
+    /*Agrega espacio interno ARRIBA.Eso baja el contenido*/
     padding-top: 120px;
+    /*Agrega espacio interno a la izquierda,osea que mueve las cosas a la derecha*/
     padding-left: 80px;
+    /*Cambia el color del texto.*/
     color: #f5ead7;
 }
 
-.contenido-cerezos h1{
+/*<h1>Flores que<br>cuentan historias</h1>*/
+.contenido-cerezos h1 {
+    /*Cambia el tamaño del texto,esta grande */
     font-size: 70px;
+    /*Cambio de letra*/
     font-family: Georgia, serif;
+    /*Controla el espacio entre líneas*/
     line-height: 75px;
+    /*Agrega espacio DEBAJO del título*/
     margin-bottom: 30px;
 }
 
-.contenido-cerezos p{
+/*<p>
+    En Sakura, cada flor es elegida...
+</p>*/
+.contenido-cerezos p {
+    /*Cambia el tamaño de la letra.*/
     font-size: 20px;
+    /*Controla el espacio entre líneas del párrafo*/
     line-height: 40px;
+    /*Agrega espacio debajo del párrafo,en este caso es el espacio enre el parrafo y los botones de ver ramos y sobre nosotros */
     margin-bottom: 40px;
+    /*Define el ancho del párrafo.*/
     width: 600px;
 }
+
 /*=============
 Confi de los botones en la imagen principal
 ===============*/
-.botones{
+
+/*<div class="botones">*/
+.botones {
+    /*Hace que los botones salgan en fila horizontal*/
     display: flex;
+    /*Agrega espacio entre ambos botones*/
     gap: 20px;
 }
 
-.btn{
+/*<a href="#" class="btn btn-ver"> y <a href="#" class="btn btn-nosotros">*/
+.btn {
+    /*Quita la línea automática de los enlaces*/
     text-decoration: none;
-    padding: 14px 30px;
+    /*Agrega espacio INTERNO al botón*/
+    padding: 14px/*arriba y abajo*/ 30px/*izquierda y derecha*/;
+    /*Redondea las esquinas del botón*/
     border-radius: 8px;
+    /*Cambia el tamaño de la letra del botón*/
     font-size: 16px;
+    /*Pone el texto en negrita*/
     font-weight: bold;
 }
 
-.btn-ver{
+/*<a href="#" class="btn btn-ver">
+    VER RAMOS
+</a>     osea boton ver*/
+.btn-ver {
+    /*Cambia el color de fondo del botón*/
     background-color: #b7bf8f;
+    /*Cambia el color del texto*/
     color: white;
 }
 
-.btn-nosotros{
-    border: 2px solid #f5ead7;
-    color: #f5ead7;
-}
-/*=============
-Confi del cuadro verde 
-===============*/
-.beneficios{
-    width: 80%;
-    margin: -40px auto 60px;
-    background-color: #a7b178;
-    border-radius: 12px;
-    display: flex;
-    justify-content: space-around;
-    padding: 30px 20px;
+/*<a href="#" class="btn btn-nosotros">
+    SOBRE NOSOTROS
+</a>       osea boton nosotros*/
+.btn-nosotros {
+    /*Agrega un borde alrededor del botón*/
+    border: 2px/*grosor del borde*/ solid/*tipo de línea sólida*/ #f5ead7 /*color del borde*/;
+    /*Cambia el color del texto del botón*/
     color: #f5ead7;
 }
 
-.beneficio{
+/*=============
+Confi del cuadro verde 
+===============*/
+
+/*<section class="beneficios">*/
+.beneficios {
+    /*Hace que el cuadro ocupe el 80% del ancho de la pantalla*/
+    width: 80%;
+    /*Agrega espacios POR FUERA del cuadro*/
+    margin: -40px/* esto es lo que hace que el cuadro suba y quede un poco sobre la imagen principal*/ 
+    auto/*centra el cuadro horizontalmente*/ 60px/*espacio abajo*/;
+    /*Cambia el color de fondo*/
+    background-color: #a7b178;
+    /*Redondea las esquinas del cuadro*/
+    border-radius: 12px;
+    /*Hace que los beneficios salgan uno a la par del otro*/
+    display: flex;
+    /*Hace que los elementos no se vean pegado y haya espacio entre ellos*/
+    justify-content: space-around;
+    /*Agrega espacio INTERNO al cuadro*/
+    padding: 30px/*arriba y abajo*/ 20px/*izquierda,derecha*/;
+    /*Cambia el color del texto*/
+    color: #f5ead7;
+}
+
+.beneficio {
     width: 25%;
     text-align: center;
 }
 
-.beneficio img{
+.beneficio img {
     width: 50px;
     margin-bottom: 15px;
 }
 
-.beneficio h3{
+.beneficio h3 {
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-.beneficio p{
+.beneficio p {
     font-size: 14px;
 }
+
 /*estilos que van a heredar todos los elementos de las paginas*/
 
 /*===================
@@ -204,7 +323,8 @@ colecciones,titulo
 .titulo-seccion h2 {
     font-family: Georgia, serif;
     font-size: 38px;
-    font-weight: normal;/*sin negrita*/
+    font-weight: normal;
+    /*sin negrita*/
     color: #1a1a1a;
     margin-bottom: 15px;
 
@@ -234,8 +354,10 @@ foto de cada tarjeta
 .tarjeta-coleccion img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /*para que las imagenes se ajusten al tamaño sin deformarse*/
-    display: block;/*elimina el espacio debajo de las imagenes*/
+    object-fit: cover;
+    /*para que las imagenes se ajusten al tamaño sin deformarse*/
+    display: block;
+    /*elimina el espacio debajo de las imagenes*/
 
 }
 
@@ -244,7 +366,8 @@ foto de cada tarjeta
     padding: 20px;
     transition: 0.3s;
 }
-.tarjeta-coleccion:hover .tarjeta-info{
+
+.tarjeta-coleccion:hover .tarjeta-info {
     transform: translateY(-10px);
 }
 
@@ -260,22 +383,26 @@ foto de cada tarjeta
     font-weight: bold;
     letter-spacing: 1.5px;
 }
+
 /*color de fondo de cada tarjeta*/
-.tarjeta-rosa{
+.tarjeta-rosa {
     background-color: #c97070;
-    color:#f5ead7;
+    color: #f5ead7;
 }
-.tarjeta-crema{
+
+.tarjeta-crema {
     background-color: #e7d1a7f8;
-    color:#3a3a3a;
+    color: #3a3a3a;
 }
-.tarjeta-beige{
+
+.tarjeta-beige {
     background-color: #e8d9b0;
-    color:#3a3a3a;
+    color: #3a3a3a;
 }
-.tarjeta-verde{
+
+.tarjeta-verde {
     background-color: #003b2d;
-    color:#f5ead7;
+    color: #f5ead7;
 }
 
 
@@ -283,7 +410,7 @@ foto de cada tarjeta
 Pagina NOSOTROS
 ===============*/
 
-.nosotros{
+.nosotros {
     background-color: #a7b178;
     display: flex;
     align-items: center;
@@ -292,57 +419,58 @@ Pagina NOSOTROS
     padding: 70px 80px;
 }
 
-.texto-nosotros{
+.texto-nosotros {
     width: 350px;
     color: #003b2d;
 }
 
-.texto-nosotros .subtitulo{
+.texto-nosotros .subtitulo {
     font-size: 11px;
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 15px;
 }
 
-.texto-nosotros h2{
+.texto-nosotros h2 {
     font-family: Georgia, serif;
     font-size: 34px;
     font-weight: normal;
     margin-bottom: 20px;
 }
 
-.texto-nosotros p{
+.texto-nosotros p {
     font-size: 14px;
     line-height: 26px;
 }
 
-.imagen-nosotros img{
+.imagen-nosotros img {
     width: 470px;
     height: 220px;
     object-fit: cover;
     border-radius: 6px;
 }
+
 /*=============
 CONTACTO EN NOSOTROS
 ===============*/
-.contacto-nosotros{
+.contacto-nosotros {
     margin-top: 35px;
 }
 
-.contacto-nosotros p{
+.contacto-nosotros p {
     font-size: 15px;
     line-height: 32px;
     color: #003b2d;
 }
 
-.contacto-nosotros strong{
+.contacto-nosotros strong {
     font-weight: bold;
 }
 
 /*=============
 FOOTER
 ===============*/
-.footer{
+.footer {
     background-color: #003b2d;
     padding: 50px 20px;
     text-align: center;
@@ -351,7 +479,7 @@ FOOTER
 /*=============
 ENLACES DEL FOOTER
 ===============*/
-.footer-links{
+.footer-links {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -359,27 +487,28 @@ ENLACES DEL FOOTER
     margin-bottom: 30px;
 }
 
-.footer-links h3{
+.footer-links h3 {
     color: #f5ead7;
     font-size: 22px;
     margin-bottom: 10px;
     font-family: Georgia, serif;
 }
 
-.footer-links a{
+.footer-links a {
     color: #c7d39f;
     text-decoration: none;
     font-size: 18px;
     transition: 0.3s;
 }
 
-.footer-links a:hover{
+.footer-links a:hover {
     color: white;
 }
+
 /*=============
 TEXTO FINAL con el c de marca registrada
 ===============*/
-.copy{
+.copy {
     color: #f5ead7;
     font-size: 13px;
     margin-top: 20px;
@@ -388,16 +517,16 @@ TEXTO FINAL con el c de marca registrada
 /*=============
 PAGINA RAMOS
 ===============*/
-.pagina-ramos{
+.pagina-ramos {
     padding: 90px 120px;
     background-color: #f5ead7;
 }
 
-.encabezado-ramos{
+.encabezado-ramos {
     margin-bottom: 60px;
 }
 
-.encabezado-ramos h1{
+.encabezado-ramos h1 {
     font-family: Georgia, serif;
     font-size: 60px;
     font-weight: normal;
@@ -405,51 +534,51 @@ PAGINA RAMOS
     margin-bottom: 25px;
 }
 
-.encabezado-ramos p{
+.encabezado-ramos p {
     width: 500px;
     font-size: 18px;
     line-height: 32px;
     color: #333;
 }
 
-.lista-ramos{
+.lista-ramos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 35px;
 }
 
-.tarjeta-ramo{
+.tarjeta-ramo {
     background-color: #f5ead7;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
-.tarjeta-ramo img{
+.tarjeta-ramo img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     display: block;
 }
 
-.info-ramo{
+.info-ramo {
     padding: 20px;
     position: relative;
 }
 
-.info-ramo h3{
+.info-ramo h3 {
     font-family: Georgia, serif;
     font-size: 20px;
     color: #2b2b2b;
     margin-bottom: 10px;
 }
 
-.info-ramo p{
+.info-ramo p {
     font-size: 16px;
     color: #2b2b2b;
 }
 
-.info-ramo button{
+.info-ramo button {
     position: absolute;
     right: 20px;
     bottom: 20px;
