@@ -9,7 +9,6 @@ Reset
 *{
     margin: 0;
     padding: 0;
-    /* Hace que el padding no aumente el tamaño total */
     box-sizing: border-box;
 }
 /*=============
