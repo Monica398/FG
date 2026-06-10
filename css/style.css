@@ -287,21 +287,31 @@ Confi del cuadro verde
 }
 
 .beneficio {
+    /*Hace que cada beneficio ocupe el 25% del ancho*/
     width: 25%;
+    /*Centra el contenido horizontalmente*/
     text-align: center;
 }
 
+/*imágenes que están dentro del cuadro verde*/
 .beneficio img {
+    /*Define el tamaño de las imágenes*/
     width: 50px;
+    /*Agrega espacio debajo de la imagen*/
     margin-bottom: 15px;
 }
 
+/*Son las letras que dicen FLORES FRESCAS,ENVÍOS A DOMICILIO y eso*/
 .beneficio h3 {
+    /*Cambia el tamaño de los títulos*/
     font-size: 16px;
+    /*Agrega espacio debajo del título*/
     margin-bottom: 10px;
 }
 
+/*Es lo que dice Seleccionadas cada día,Rápidos y seguros*/
 .beneficio p {
+    /*Cambia el tamaño del texto.*/
     font-size: 14px;
 }
 
@@ -310,13 +320,21 @@ Confi del cuadro verde
 /*===================
 colecciones,titulo
 ====================*/
+
+/*Esto es lo de los cuadros con las imagenes y colores*/
 .colecciones {
-    padding: 20px 60px 80px;
+    /* Agrega espacio INTERNO a la sección*/
+    padding: 20px/*arriba*/ 60px/*lados*/ 80px/*abajo*/;
 
 }
 
+/*<div class="titulo-seccion">
+    <h2>Descubre nuestras colecciones</h2>
+</div>*/
 .titulo-seccion {
+    /*Centra el texto horizontalmente,hace que quede en el centro de la pagina*/
     text-align: center;
+    /*Agrega espacio POR FUERA debajo del título*/
     margin-bottom: 50px;
 }
 
