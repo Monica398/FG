@@ -1,20 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-    <!-- Permite usar tildes, ñ y caracteres especiales -->
     <meta charset="UTF-8">
-
-    <!-- Hace que la página se adapte al tamaño de la pantalla -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS general: header, menú, logo, iconos -->
+    <!-- CONECTA EL CSS -->
+    <!-- CONECTA LOS CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- CSS específico de la página Ramos -->
     <link rel="stylesheet" href="css/ramos.css">
-
-    <!-- CSS del footer -->
     <link rel="stylesheet" href="css/footer.css">
 
     <title>Ramos | Sakura</title>
@@ -22,19 +16,15 @@
 
 <body>
 
-    <!-- ===================================================== -->
-    <!-- HEADER / BARRA DE NAVEGACIÓN -->
-    <!-- ===================================================== -->
-
+    <!-- HEADER -->
     <header class="header">
 
-        <!-- LOGO -->
         <div class="logo">
             <h1>Sakura</h1>
             <p>LA FLORISTERÍA</p>
         </div>
 
-        <!-- MENÚ -->
+        <!-- MENU -->
         <nav class="menu">
             <ul>
                 <li><a href="index.html">INICIO</a></li>
@@ -42,12 +32,12 @@
                 <li><a href="armar_Ramo.html">ARMAR RAMO</a></li>
                 <li><a href="ocasiones.html">OCASIONES</a></li>
                 <li><a href="detalles.html">DETALLES</a></li>
-                <li><a href="index.html#nosotros">NOSOTROS</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li>
                 <li><a href="#contacto">CONTACTO</a></li>
             </ul>
         </nav>
 
-        <!-- ICONOS DE USUARIO Y CARRITO -->
+        <!-- ICONOS -->
         <div class="iconos">
 
             <button>
@@ -62,15 +52,8 @@
 
     </header>
 
-    <!-- ===================================================== -->
-    <!-- CONTENIDO PRINCIPAL DE RAMOS -->
-    <!-- ===================================================== -->
-
+    <!-- PAGINA RAMOS -->
     <main class="pagina-ramos">
-
-        <!-- ===================================================== -->
-        <!-- ENCABEZADO DE LA PÁGINA -->
-        <!-- ===================================================== -->
 
         <section class="encabezado-ramos">
 
@@ -81,55 +64,19 @@
                 Encuentra el detalle perfecto para cada ocasión.
             </p>
 
-            <!-- ===================================================== -->
-            <!-- FILTROS DE PRECIO -->
-            <!-- ===================================================== -->
-            <!-- 
-                Estos botones sirven para mostrar los ramos según el precio.
-                Cuando el usuario da clic, se ejecuta la función filtrarPrecio().
-            -->
-
-            <div class="filtros">
-
-                <!-- Muestra todos los ramos -->
-                <button onclick="filtrarPrecio('todos')">Todos</button>
-
-                <!-- Muestra solo los ramos con data-precio="bajo" -->
-                <button onclick="filtrarPrecio('bajo')">Menos de ₡20 000</button>
-
-                <!-- Muestra solo los ramos con data-precio="medio" -->
-                <button onclick="filtrarPrecio('medio')">₡20 000 - ₡30 000</button>
-
-                <!-- Muestra solo los ramos con data-precio="alto" -->
-                <button onclick="filtrarPrecio('alto')">Más de ₡30 000</button>
-
-            </div>
 
         </section>
-
-        <!-- ===================================================== -->
-        <!-- LISTA DE RAMOS -->
-        <!-- ===================================================== -->
-        <!-- 
-            data-precio sirve para clasificar cada ramo.
-            JavaScript usa ese dato para saber cuáles mostrar y cuáles ocultar.
-
-            bajo = menos de ₡20 000
-            medio = entre ₡20 000 y ₡30 000
-            alto = más de ₡30 000
-        -->
 
         <section class="lista-ramos">
 
             <!-- RAMO 1 -->
-            <div class="tarjeta-ramo" data-precio="medio">
+            <div class="tarjeta-ramo">
 
                 <img src="assets/images/ramo01.jpg" alt="Ramo Encanto">
 
                 <div class="info-ramo">
                     <h3>Ramo Encanto</h3>
                     <p>₡25 000</p>
-
                     <button>
                         <img src="assets/images/carrito.png" alt="Agregar al carrito">
                     </button>
@@ -138,15 +85,14 @@
             </div>
 
             <!-- RAMO 2 -->
-            <div class="tarjeta-ramo" data-precio="bajo">
+            <div class="tarjeta-ramo">
 
-                <img src="assets/images/ramo02.jpg" alt="Ramo Brisa">
+                <img src="assets/images/ramo02.jpg" alt="Ramo Primavera">
 
                 <div class="info-ramo">
                     <h3>Ramo Brisa</h3>
                     <p>₡10 000</p>
-
-                    <button>
+                    <button >
                         <img src="assets/images/carrito.png" alt="Agregar al carrito">
                     </button>
                 </div>
@@ -154,14 +100,13 @@
             </div>
 
             <!-- RAMO 3 -->
-            <div class="tarjeta-ramo" data-precio="alto">
+            <div class="tarjeta-ramo">
 
-                <img src="assets/images/ramo03.jpg" alt="Ramo Luz">
+                <img src="assets/images/ramo03.jpg" alt="Ramo Pureza">
 
                 <div class="info-ramo">
                     <h3>Ramo Luz</h3>
-                    <p>₡30 000</p>
-
+                    <p>₡22 000</p>
                     <button>
                         <img src="assets/images/carrito.png" alt="Agregar al carrito">
                     </button>
@@ -170,15 +115,14 @@
             </div>
 
             <!-- RAMO 4 -->
-            <div class="tarjeta-ramo" data-precio="medio">
+            <div class="tarjeta-ramo">
 
-                <img src="assets/images/ramo04.jpg" alt="Ramo Matiz">
+                <img src="assets/images/ramo04.jpg" alt="Ramo Romance">
 
                 <div class="info-ramo">
                     <h3>Ramo Matiz</h3>
                     <p>₡25 000</p>
-
-                    <button>
+                    <button >
                         <img src="assets/images/carrito.png" alt="Agregar al carrito">
                     </button>
                 </div>
@@ -186,14 +130,13 @@
             </div>
 
             <!-- RAMO 5 -->
-            <div class="tarjeta-ramo" data-precio="medio">
+            <div class="tarjeta-ramo">
 
                 <img src="assets/images/ramo05.jpg" alt="Ramo Diversion">
 
                 <div class="info-ramo">
                     <h3>Ramo Diversion</h3>
                     <p>₡25 000</p>
-
                     <button>
                         <img src="assets/images/carrito.png" alt="Agregar al carrito">
                     </button>
@@ -202,14 +145,13 @@
             </div>
 
             <!-- RAMO 6 -->
-            <div class="tarjeta-ramo" data-precio="medio">
+            <div class="tarjeta-ramo">
 
                 <img src="assets/images/ramo06.jpg" alt="Ramo Primaveral">
 
                 <div class="info-ramo">
                     <h3>Ramo Primaveral</h3>
                     <p>₡23 000</p>
-
                     <button>
                         <img src="assets/images/carrito.png" alt="Agregar al carrito">
                     </button>
@@ -218,14 +160,13 @@
             </div>
 
             <!-- RAMO 7 -->
-            <div class="tarjeta-ramo" data-precio="medio">
+            <div class="tarjeta-ramo">
 
                 <img src="assets/images/ramo07.jpg" alt="Ramo Amor">
 
                 <div class="info-ramo">
                     <h3>Ramo Amor</h3>
                     <p>₡20 000</p>
-
                     <button>
                         <img src="assets/images/carrito.png" alt="Agregar al carrito">
                     </button>
@@ -234,14 +175,13 @@
             </div>
 
             <!-- RAMO 8 -->
-            <div class="tarjeta-ramo" data-precio="bajo">
+            <div class="tarjeta-ramo">
 
-                <img src="assets/images/ramo08.jpg" alt="Ramo Rosado">
+                <img src="assets/images/ramo08.jpg" alt="Ramo Encanto">
 
                 <div class="info-ramo">
                     <h3>Ramo Rosado</h3>
                     <p>₡15 000</p>
-
                     <button>
                         <img src="assets/images/carrito.png" alt="Agregar al carrito">
                     </button>
@@ -252,53 +192,42 @@
         </section>
 
     </main>
-
     <!-- ===================================================== -->
     <!-- FOOTER -->
     <!-- ===================================================== -->
 
     <footer class="footer">
 
-        <div class="footer-contenido">
+        <!-- ===================================================== -->
+        <!-- INFORMACIÓN DE CONTACTO -->
+        <!-- ===================================================== -->
+        <div id="contacto" class="footer-contacto">
 
-            <!-- CONTACTO -->
-            <div id="contacto" class="footer-contacto">
+            <h3>Contacto</h3>
 
-                <h3>Contacto</h3>
-
-                <p>San José, Costa Rica</p>
-                <p>+506 8888 8888</p>
-                <p>sakurafloristeri@gmail.com</p>
-                <p>Lunes a Sábado 9:00 a.m - 5:00 p.m</p>
-
-            </div>
-
-            <!-- ENLACES RÁPIDOS -->
-            <div class="footer-links">
-
-                <h3>Enlaces rápidos</h3>
-
-                <a href="index.html">Inicio</a>
-                <a href="ramos.html">Ramos</a>
-                <a href="ocasiones.html">Ocasiones</a>
-                <a href="index.html#nosotros">Nosotros</a>
-
-            </div>
-
+            <p>San José, Costa Rica</p>
+            <p>+506 8888 8888</p>
+            <p>sakurafloristeri@gmail.com</p>
+            <p>Lunes a Sábado 9:00 a.m - 5:00 p.m</p>
         </div>
+
+        <!-- ENLACES -->
+        <div class="footer-links">
+
+            <h3>Enlaces rápidos</h3>
+            <a href="index.html">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#">Ramos</a>
+            <a href="#">Ocasiones</a>
+        </div>
+
 
         <!-- COPYRIGHT -->
         <p class="copy">
             © 2026 Sakura Floristería - Todos los derechos reservados
         </p>
-
     </footer>
 
-    <!-- 
-        Conecta el archivo JavaScript.
-        Va al final para que primero cargue todo el HTML.
-    -->
-    <script src="js/ramos.js"></script>
 
 </body>
 
