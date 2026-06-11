@@ -68,7 +68,10 @@ PAGINA RAMOS
     bottom: 20px;
     background: none;
     border: none;
-    font-size: 32px;
-    color: #003b2d;
     cursor: pointer;
+}
+
+.info-ramo button img {
+    width: 28px;
+    height: 28px;
 }
