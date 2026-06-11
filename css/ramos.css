@@ -75,3 +75,32 @@ PAGINA RAMOS
     width: 28px;
     height: 28px;
 }
+/*=============
+FILTROS DE PRECIO
+===============*/
+
+/* Caja donde están los botones del filtro */
+.filtros {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* Diseño de cada botón del filtro */
+.filtros button {
+    background-color: #003b2d;
+    color: #f5ead7;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Cambia el color cuando pasas el mouse */
+.filtros button:hover {
+    background-color: #a7b178;
+    color: #003b2d;
+}
