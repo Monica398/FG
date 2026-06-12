@@ -407,7 +407,6 @@ DISEÑO PARA CELULARES
         gap: 20px;
     }
 
-    /* MENÚ */
     .menu ul {
         flex-wrap: wrap;
         justify-content: center;
@@ -420,25 +419,38 @@ DISEÑO PARA CELULARES
     }
 
     .contenido-cerezos {
-        padding: 60px 20px;
+        padding: 80px 25px;
     }
 
     .contenido-cerezos h1 {
-        font-size: 50px;
+        font-size: 48px;
         line-height: 55px;
     }
 
     .contenido-cerezos p {
         width: 100%;
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 34px;
     }
 
     /* BOTONES */
     .botones {
         flex-direction: column;
+        align-items: flex-start;
+        margin-top: 25px;
+        margin-bottom: 80px;
+    }
+
+    .btn {
+        display: block;
+        width: fit-content;
     }
 
     /* COLECCIONES */
+    .colecciones {
+        padding-top: 90px;
+    }
+
     .tarjetas-coleccion {
         flex-direction: column;
         align-items: center;
@@ -468,5 +480,4 @@ DISEÑO PARA CELULARES
         flex-direction: column;
         gap: 20px;
     }
-
 }
