@@ -86,10 +86,11 @@ function mostrarFlores() {
 
                 <h4>${flor.nombre}</h4>
 
-                <p class="precio">₡${flor.precio}</p>
+                <p class="precio">₡${flor.precio} c/u</p>
 
+                <p class="texto-colores">Colores disponibles:</p>
                 <div class="colores">
-                    ${botonesColores}
+                ${botonesColores}
                 </div>
 
                 <div class="cantidad">
