@@ -77,16 +77,14 @@ PAGINA Detalles
 }
 
 /* =====================================================
-DISEÑO PARA CELULARES - PÁGINA RAMOS
+DISEÑO PARA CELULARES - PÁGINA DETALLES
 ===================================================== */
 @media (max-width: 768px) {
 
-    /* Reduce los espacios de la página */
     .pagina-detalles {
         padding: 50px 25px;
     }
 
-    /* Centra el encabezado */
     .encabezado-detalles {
         text-align: center;
         margin-bottom: 40px;
@@ -102,37 +100,16 @@ DISEÑO PARA CELULARES - PÁGINA RAMOS
         line-height: 28px;
     }
 
-    /* Acomoda los botones del filtro */
-    .filtros {
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .filtros button {
-        width: 100%;
-        max-width: 280px;
-    }
-
-    /* Hace que los ramos salgan uno debajo del otro */
-    .lista-ramos {
+    .lista-detalles {
         grid-template-columns: 1fr;
         gap: 30px;
     }
 
-    /* Ajusta las tarjetas al ancho del celular */
     .tarjeta-detalles {
         width: 100%;
     }
 
     .tarjeta-detalles img {
         height: 280px;
-    }
-
-    .info-detalles h3 {
-        font-size: 22px;
-    }
-
-    .info-detalles p {
-        font-size: 18px;
     }
 }
