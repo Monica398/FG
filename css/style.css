@@ -457,3 +457,42 @@ foto de cada tarjeta
     background-color: #003b2d;
     color: #f5ead7;
 }
+
+/*===================
+DISEÑO RESPONSIVO
+====================*/
+@media (max-width: 768px){
+
+    .header{
+        flex-direction: column;
+    }
+
+    .menu ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tarjetas-coleccion{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nosotros{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen-nosotros img{
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+
+    .contenido-cerezos h1{
+        font-size: 45px;
+    }
+
+    .contenido-cerezos p{
+        width: 100%;
+    }
+}
