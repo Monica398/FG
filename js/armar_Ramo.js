@@ -66,6 +66,11 @@ const flores = [
 ];
 
 const contenedorFlores = document.getElementById("contenedorFlores");
+const listaResumen = document.getElementById("listaResumen");
+const subtotalFlores = document.getElementById("subtotalFlores");
+const totalGeneral = document.getElementById("totalGeneral");
+
+const costoEntrega = 2500;
 
 function mostrarFlores() {
 
@@ -119,6 +124,7 @@ function sumarCantidad(id) {
     }
 
     mostrarFlores();
+    actualizarResumen();
 }
 
 function restarCantidad(id) {
@@ -132,6 +138,48 @@ function restarCantidad(id) {
     }
 
     mostrarFlores();
+    actualizarResumen();
 }
+function actualizarResumen() {
 
+    let contenidoResumen = "";
+    let subtotal = 0;
+
+    for (const flor of flores) {
+
+        if (flor.cantidad > 0) {
+
+            let totalFlor = flor.precio * flor.cantidad;
+
+            subtotal = subtotal + totalFlor;
+
+            contenidoResumen += `
+                <div class="item-resumen">
+                    <p>
+                        ${flor.nombre} x${flor.cantidad}
+                    </p>
+
+                    <strong>
+                        ₡${totalFlor}
+                    </strong>
+                </div>
+            `;
+        }
+    }
+
+    if (contenidoResumen === "") {
+        listaResumen.innerHTML = `
+            <p class="mensaje-vacio">
+                Aún no has agregado flores.
+            </p>
+        `;
+    } else {
+        listaResumen.innerHTML = contenidoResumen;
+    }
+
+    subtotalFlores.innerHTML = "₡" + subtotal;
+
+    totalGeneral.innerHTML = "₡" + (subtotal + costoEntrega);
+}
 mostrarFlores();
+actualizarResumen();
