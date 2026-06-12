@@ -4,7 +4,7 @@
             "id": 1,
             "nombre": "Rosa",
             "precio": 1800,
-            "imagen": "assets/images/rosaRo.jpg",
+            "imagen": "assets/images/rosaRosado.jpg",
             "colores": ["Rojo", "Rosado", "Blanco", "Morado"]
         },
         {

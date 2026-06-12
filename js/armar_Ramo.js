@@ -1,16 +1,6 @@
 let flores = [];
-const extras = [
-    {
-        nombre: "Tarjeta",
-        precio: 1500,
-        seleccionado: false
-    },
-    {
-        nombre: "Chocolates",
-        precio: 3000,
-        seleccionado: false
-    }
-];
+let extras=[];
+
 const contenedorFlores = document.getElementById("contenedorFlores");
 const listaResumen = document.getElementById("listaResumen");
 const subtotalFlores = document.getElementById("subtotalFlores");
@@ -159,7 +149,13 @@ function actualizarResumen() {
 fetch("data/flores.json")
     .then(respuesta => respuesta.json())
     .then(datos => {
-        flores = datos;
+        flores = datos.flores;
+
+        for (const flor of flores) {
+            flor.cantidad = 0;
+            flor.colorSeleccionado = "";
+        }
+
         mostrarFlores();
         actualizarResumen();
     });
