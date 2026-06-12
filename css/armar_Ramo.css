@@ -411,3 +411,41 @@ BLOQUE: TARJETA Y CHOCOLATES
     border: 1px solid #d8b7a3;
     border-radius: 10px;
 }
+
+/* =========================
+   BLOQUE: INFORMACIÓN DE ENTREGA
+========================= */
+
+.form-entrega {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 35px;
+}
+
+.campo-entrega {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo-entrega label {
+    color: #003b2d;
+    font-weight: bold;
+}
+
+.campo-entrega input {
+    padding: 12px;
+    border: 1px solid #d8b7a3;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.btn-pagar-entrega {
+    margin-top: 22px;
+    border-radius: 8px;
+    background-color: #d3968c;
+}
+
+.btn-pagar-entrega:hover {
+    background-color: #c77f75;
+}
