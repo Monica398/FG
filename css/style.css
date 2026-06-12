@@ -119,7 +119,13 @@ Cambia color al pasar el mouse
     /*Cambia el color del texto cuando pasan el mouse (beige a verde)*/
     color: #c7d39f;
     /*Agrega una línea debajo del texto*/
-    border-bottom: 2px/*grosor de la línea*/ solid /*tipo de línea sólida*/ #c7d39f /*color de la línea*/;
+    border-bottom: 2px
+        /*grosor de la línea*/
+        solid
+        /*tipo de línea sólida*/
+        #c7d39f
+        /*color de la línea*/
+    ;
     /*Agrega espacio abajo del texto*/
     padding-bottom: 5px;
 }
@@ -150,7 +156,9 @@ Confi de los iconos de la barra
 }
 
 .iconos button:hover {
-    transform/*sirve para transformar o mover elementos*/: scale(1.1);
+    transform
+    /*sirve para transformar o mover elementos*/
+    : scale(1.1);
     /*scale es para q se hagan mas grande y 1 = tamaño normal y el 1.1 = 10% más grande*/
 }
 
@@ -232,7 +240,11 @@ Confi de los botones en la imagen principal
     /*Quita la línea automática de los enlaces*/
     text-decoration: none;
     /*Agrega espacio INTERNO al botón*/
-    padding: 14px/*arriba y abajo*/ 30px/*izquierda y derecha*/;
+    padding: 14px
+        /*arriba y abajo*/
+        30px
+        /*izquierda y derecha*/
+    ;
     /*Redondea las esquinas del botón*/
     border-radius: 8px;
     /*Cambia el tamaño de la letra del botón*/
@@ -256,7 +268,13 @@ Confi de los botones en la imagen principal
 </a>       osea boton nosotros*/
 .btn-nosotros {
     /*Agrega un borde alrededor del botón*/
-    border: 2px/*grosor del borde*/ solid/*tipo de línea sólida*/ #f5ead7 /*color del borde*/;
+    border: 2px
+        /*grosor del borde*/
+        solid
+        /*tipo de línea sólida*/
+        #f5ead7
+        /*color del borde*/
+    ;
     /*Cambia el color del texto del botón*/
     color: #f5ead7;
 }
@@ -270,8 +288,13 @@ Confi del cuadro verde
     /*Hace que el cuadro ocupe el 80% del ancho de la pantalla*/
     width: 80%;
     /*Agrega espacios POR FUERA del cuadro*/
-    margin: -40px/* esto es lo que hace que el cuadro suba y quede un poco sobre la imagen principal*/ 
-    auto/*centra el cuadro horizontalmente*/ 60px/*espacio abajo*/;
+    margin: -40px
+        /* esto es lo que hace que el cuadro suba y quede un poco sobre la imagen principal*/
+        auto
+        /*centra el cuadro horizontalmente*/
+        60px
+        /*espacio abajo*/
+    ;
     /*Cambia el color de fondo*/
     background-color: #a7b178;
     /*Redondea las esquinas del cuadro*/
@@ -281,7 +304,11 @@ Confi del cuadro verde
     /*Hace que los elementos no se vean pegado y haya espacio entre ellos*/
     justify-content: space-around;
     /*Agrega espacio INTERNO al cuadro*/
-    padding: 30px/*arriba y abajo*/ 20px/*izquierda,derecha*/;
+    padding: 30px
+        /*arriba y abajo*/
+        20px
+        /*izquierda,derecha*/
+    ;
     /*Cambia el color del texto*/
     color: #f5ead7;
 }
@@ -324,7 +351,13 @@ colecciones,titulo
 /*Esto es lo de los cuadros con las imagenes y colores*/
 .colecciones {
     /* Agrega espacio INTERNO a la sección*/
-    padding: 20px/*arriba*/ 60px/*lados*/ 80px/*abajo*/;
+    padding: 20px
+        /*arriba*/
+        60px
+        /*lados*/
+        80px
+        /*abajo*/
+    ;
 
 }
 
@@ -354,6 +387,8 @@ colecciones,titulo
     overflow: hidden;
     cursor: pointer;
     transition: 0.3s;
+    text-decoration: none;
+    color: inherit;
 }
 
 /*================
@@ -422,5 +457,3 @@ foto de cada tarjeta
     background-color: #003b2d;
     color: #f5ead7;
 }
-
-
