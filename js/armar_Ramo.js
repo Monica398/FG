@@ -108,10 +108,7 @@ function mostrarFlores() {
 
         for (const color of flor.colores) {
             botonesColores +=
-                `<button 
-        class="color-${color}" 
-        onclick="seleccionarColor(${flor.id}, '${color}')"> ${color}
-        </button>`;
+        `<button class="color-${color}" onclick="seleccionarColor(${flor.id}, '${color}')"> ${color} </button>`;
         }
 
         contenido += `
