@@ -229,8 +229,8 @@ function actualizarResumen() {
     }
 
     subtotalFlores.innerHTML = "₡" + subtotal;
-
-    totalGeneral.innerHTML = "₡" + (subtotal + costoEntrega);
+    totalGeneral.innerHTML ="₡" + (subtotal + totalExtras + costoEntrega);
+    totalExtrasTexto.innerHTML ="₡" + totalExtras;
 }
 mostrarFlores();
 actualizarResumen();
