@@ -1,42 +1,18 @@
-// =========================
-// FLORES DISPONIBLES
-// =========================
-
 const flores = [
 
     {
         id: 1,
         nombre: "Rosa",
         precio: 1800,
-        imagen: "assets/images/rosaRoja.jpg"
-    },
-
-    {
-        id: 2,
-        nombre: "Tulipan",
-        precio: 1800,
-        imagen: "assets/images/tulipanRojo.jpg"
-    },
-
-    {
-        id: 3,
-        nombre: "Lirio",
-        precio: 1800,
-        imagen: "assets/images/lirioAmarillo.jpg"
+        imagen: "assets/images/rosa.jpg",
+        colores: ["Rojo", "Rosado", "Blanco", "Morado"],
+        cantidad: 0
     }
 
 ];
 
-// =========================
-// CONTENEDOR HTML
-// =========================
-
 const contenedorFlores =
 document.getElementById("contenedorFlores");
-
-// =========================
-// MOSTRAR FLORES
-// =========================
 
 function mostrarFlores() {
 
@@ -56,43 +32,67 @@ function mostrarFlores() {
                 ₡${flor.precio}
             </p>
 
-            <button onclick="verFlor(${flor.id})">
-                Ver detalle
-            </button>
+            <div class="colores">
+
+                <button>${flor.colores[0]}</button>
+                <button>${flor.colores[1]}</button>
+                <button>${flor.colores[2]}</button>
+                <button>${flor.colores[3]}</button>
+
+            </div>
+
+            <div class="cantidad">
+
+                <button onclick="restarCantidad(${flor.id})">
+                    -
+                </button>
+
+                <span id="cantidad-${flor.id}">
+                    ${flor.cantidad}
+                </span>
+
+                <button onclick="sumarCantidad(${flor.id})">
+                    +
+                </button>
+
+            </div>
 
         </div>
-        
+
         `;
     }
 
     contenedorFlores.innerHTML = contenido;
 }
 
-// =========================
-// VER DETALLE
-// =========================
-
-function verFlor(id) {
+function sumarCantidad(id) {
 
     for (const flor of flores) {
 
         if (flor.id === id) {
 
-            alert(
-                "Flor: " +
-                flor.nombre +
-                "\nPrecio: ₡" +
-                flor.precio
-            );
+            flor.cantidad++;
 
         }
 
     }
 
+    mostrarFlores();
 }
 
-// =========================
-// INICIAR
-// =========================
+function restarCantidad(id) {
+
+    for (const flor of flores) {
+
+        if (flor.id === id && flor.cantidad > 0) {
+
+            flor.cantidad--;
+
+        }
+
+    }
+
+    mostrarFlores();
+}
 
 mostrarFlores();

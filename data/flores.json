@@ -4,88 +4,35 @@
             "id": 1,
             "nombre": "Rosa",
             "precio": 1800,
-            "colores": [
-                {
-                    "nombre": "Rojo",
-                    "imagen": "assets/images/rosaRoja.jpg"
-                },
-                {
-                    "nombre": "Rosa",
-                    "imagen": "assets/images/rosaRosada.jpg"
-                },
-                {
-                    "nombre": "Blanco",
-                    "imagen": "assets/images/rosaBlanca.jpg"
-                },
-                {
-                    "nombre": "Morado",
-                    "imagen": "assets/images/rosaMorada.jpg"
-                }
-            ]
+            "imagen": "assets/images/rosaRosada.jpg",
+            "colores": ["Rojo", "Rosado", "Blanco", "Morado"]
         },
         {
             "id": 2,
-            "nombre": "Tulipan",
+            "nombre": "Tulipán",
             "precio": 1800,
-            "colores": [
-                {
-                    "nombre": "Blanco",
-                    "imagen": "assets/images/tulipanBlanco.jpg"
-                },
-                {
-                    "nombre": "Rosado",
-                    "imagen": "assets/images/tulipanRosado.jpg"
-                },
-                {
-                    "nombre": "Rojo",
-                    "imagen": "assets/images/tulipanRojo.jpg"
-                }
-            ]
+            "imagen": "assets/images/tulipanRosado.jpg",
+            "colores": ["Blanco", "Rosado", "Rojo"]
         },
         {
             "id": 3,
             "nombre": "Lirio",
             "precio": 1800,
-            "colores": [
-                {
-                    "nombre": "Amarillo",
-                    "imagen": "assets/images/lirioAmarrillo.jpg"
-                },
-                {
-                    "nombre": "Rosado",
-                    "imagen": "assets/images/lirioRosado.jpg"
-                },
-                {
-                    "nombre": "Blanco",
-                    "imagen": "assets/images/lirioBlanco.png"
-                },
-                {
-                    "nombre": "Beige",
-                    "imagen": "assets/images/lirioBeige.jpg"
-                },
-                {
-                    "nombre": "Naranja",
-                    "imagen": "assets/images/lirioNaranja.jpg"
-                }
-            ]
+            "imagen": "assets/images/lirioRosado.jpg",
+            "colores": ["Amarillo", "Rosado", "Blanco", "Beige", "Naranja"]
         },
         {
             "id": 4,
             "nombre": "Girasol",
             "precio": 1800,
-            "colores": [
-                {
-                    "nombre": "Amarillo",
-                    "imagen": "assets/images/girasol.jpg"
-                }
-            ]
+            "imagen": "assets/images/girasol.jpg",
+            "colores": ["Amarillo"]
         },
         {
             "id": 5,
             "nombre": "Gerberas",
             "precio": 1700,
             "imagen": "assets/images/gerberas.jpg",
-            "categoria": "flor",
             "colores": [
                 "Rosa",
                 "Rojo",
@@ -93,57 +40,44 @@
                 "Amarillo",
                 "Fucsia",
                 "Blanco",
-                "Rosado bebe"
+                "Rosado bebé"
             ]
         },
         {
             "id": 6,
             "nombre": "Clavel",
             "precio": 1800,
-            "colores": [
-                {
-                    "nombre": "Rojo",
-                    "imagen": "assets/images/clavelRojo.jpg"
-                },
-                {
-                    "nombre": "Rosado",
-                    "imagen": "assets/images/clavelRosado.jpg"
-                },
-                {
-                    "nombre": "Blanco",
-                    "imagen": "assets/images/clavelBlanco.jpg"
-                },
-                {
-                    "nombre": "Naranja",
-                    "imagen": "assets/images/clavelNaranja.jpg"
-                }
-            ]
+            "imagen": "assets/images/clavelBlanco.jpg",
+            "colores": ["Rojo", "Rosado", "Blanco", "Naranja"]
         },
         {
             "id": 7,
-            "nombre": "Hortencia",
+            "nombre": "Hortensia",
             "precio": 1800,
-            "colores": [
-                {
-                    "nombre": "Celeste",
-                    "imagen": "assets/images/hortenciasCelestes.jpg"
-                },
-                {
-                    "nombre": "Blanco",
-                    "imagen": "assets/images/hortenciasBlanco.jpg"
-                }
-            ]
+            "imagen": "assets/images/hortensiasCelestes.jpg",
+            "colores": ["Celeste", "Blanco"]
         },
         {
             "id": 8,
-            "nombre": "Baby`s breath",
+            "nombre": "Baby's Breath",
             "precio": 1800,
-            "colores": [
-                {
-                    "nombre": "Blanco",
-                    "imagen": "assets/images/bbyBreath.jpg"
-                }
-            ]
+            "imagen": "assets/images/babyBreath.jpg",
+            "colores": ["Blanco"]
+        }
+    ],
+
+    "extras": [
+        {
+            "id": 1,
+            "nombre": "Tarjeta",
+            "precio": 2000,
+            "imagen": "assets/images/tarjeta.jpg"
+        },
+        {
+            "id": 2,
+            "nombre": "Chocolates",
+            "precio": 3000,
+            "imagen": "assets/images/chocolate.jpg"
         }
     ]
 }
