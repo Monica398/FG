@@ -1,59 +1,98 @@
-// Aquí vamos a guardar las flores que vienen del JSON
-let flores = [];
+// =========================
+// FLORES DISPONIBLES
+// =========================
 
-// Aquí guardamos lo que el cliente va escogiendo
-let ramo = [];
+const flores = [
 
-// Contenedores del HTML
-const contenedorFlores = document.getElementById("contenedorFlores");
-const listaResumen = document.getElementById("listaResumen");
-const totalRamo = document.getElementById("totalRamo");
+    {
+        id: 1,
+        nombre: "Rosa",
+        precio: 1800,
+        imagen: "assets/images/rosaRoja.jpg"
+    },
 
-// Cargar las flores desde el archivo JSON
-fetch("data/flores.json")
-    .then(respuesta => respuesta.json())
-    .then(datos => {
-        flores = datos.flores;
-        mostrarFlores(flores);
-    })
-    .catch(error => {
-        console.log("Error al cargar el JSON:", error);
-    });
+    {
+        id: 2,
+        nombre: "Tulipan",
+        precio: 1800,
+        imagen: "assets/images/tulipanRojo.jpg"
+    },
 
-// Mostrar las flores en la página
-function mostrarFlores(listaFlores) {
-    contenedorFlores.innerHTML = "";
+    {
+        id: 3,
+        nombre: "Lirio",
+        precio: 1800,
+        imagen: "assets/images/lirioAmarillo.jpg"
+    }
 
-    listaFlores.forEach(flor => {
+];
 
-        // Tomamos la primera imagen como imagen inicial
-        const imagenInicial = flor.colores[0].imagen;
+// =========================
+// CONTENEDOR HTML
+// =========================
 
-        const tarjeta = document.createElement("div");
-        tarjeta.classList.add("tarjeta-flor");
+const contenedorFlores =
+document.getElementById("contenedorFlores");
 
-        tarjeta.innerHTML = `
-            <img src="${imagenInicial}" alt="${flor.nombre}" id="imagen-${flor.id}">
+// =========================
+// MOSTRAR FLORES
+// =========================
+
+function mostrarFlores() {
+
+    let contenido = "";
+
+    for (const flor of flores) {
+
+        contenido += `
+        
+        <div class="tarjeta-flor">
+
+            <img src="${flor.imagen}" alt="${flor.nombre}">
 
             <h4>${flor.nombre}</h4>
 
-            <p class="precio">₡${flor.precio}</p>
+            <p class="precio">
+                ₡${flor.precio}
+            </p>
 
-            <div class="colores">
-                ${flor.colores.map(color => `
-                    <button class="btn-color" onclick="cambiarColor(${flor.id}, '${color.nombre}', '${color.imagen}')">
-                        ${color.nombre}
-                    </button>
-                `).join("")}
-            </div>
+            <button onclick="verFlor(${flor.id})">
+                Ver detalle
+            </button>
 
-            <div class="cantidad">
-                <button onclick="restarFlor(${flor.id})">-</button>
-                <span id="cantidad-${flor.id}">0</span>
-                <button onclick="sumarFlor(${flor.id})">+</button>
-            </div>
+        </div>
+        
         `;
+    }
 
-        contenedorFlores.appendChild(tarjeta);
-    });
+    contenedorFlores.innerHTML = contenido;
 }
+
+// =========================
+// VER DETALLE
+// =========================
+
+function verFlor(id) {
+
+    for (const flor of flores) {
+
+        if (flor.id === id) {
+
+            alert(
+                "Flor: " +
+                flor.nombre +
+                "\nPrecio: ₡" +
+                flor.precio
+            );
+
+        }
+
+    }
+
+}
+
+// =========================
+// INICIAR
+// =========================
+
+mostrarFlores();
