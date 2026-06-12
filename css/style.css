@@ -395,52 +395,78 @@ foto de cada tarjeta
     color: #f5ead7;
 }
 
-/*===================
-DISEÑO RESPONSIVO
-====================*/
+/* =====================================================
+DISEÑO PARA CELULARES
+===================================================== */
 @media (max-width: 768px) {
 
+    /* HEADER */
     .header {
         flex-direction: column;
+        padding: 20px;
+        gap: 20px;
     }
 
+    /* MENÚ */
     .menu ul {
         flex-wrap: wrap;
         justify-content: center;
         gap: 15px;
     }
 
+    /* IMAGEN PRINCIPAL */
+    .cerezos {
+        height: auto;
+    }
+
+    .contenido-cerezos {
+        padding: 60px 20px;
+    }
+
+    .contenido-cerezos h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .contenido-cerezos p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    /* BOTONES */
+    .botones {
+        flex-direction: column;
+    }
+
+    /* COLECCIONES */
     .tarjetas-coleccion {
         flex-direction: column;
         align-items: center;
     }
 
+    .tarjeta-coleccion {
+        width: 90%;
+    }
+
+    /* NOSOTROS */
     .nosotros {
         flex-direction: column;
         text-align: center;
     }
 
+    .texto-nosotros {
+        width: 100%;
+    }
+
     .imagen-nosotros img {
         width: 100%;
-        max-width: 450px;
         height: auto;
     }
-    .cerezos{
-        height: 400px;
-    }
 
-    .botones {
+    /* FOOTER */
+    .footer-contenido {
         flex-direction: column;
-        align-items: center;
+        gap: 20px;
     }
 
-    .contenido-cerezos h1 {
-        font-size: 38px;
-        line-height: 45px;
-    }
-
-    .contenido-cerezos p {
-        width: 100%;
-        max-width: 300px;
-    }
 }
