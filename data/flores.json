@@ -1,0 +1,149 @@
+{
+    "flores": [
+        {
+            "id": 1,
+            "nombre": "Rosa",
+            "precio": 1800,
+            "colores": [
+                {
+                    "nombre": "Rojo",
+                    "imagen": "assets/images/rosaRoja.jpg"
+                },
+                {
+                    "nombre": "Rosa",
+                    "imagen": "assets/images/rosaRosada.jpg"
+                },
+                {
+                    "nombre": "Blanco",
+                    "imagen": "assets/images/rosaBlanca.jpg"
+                },
+                {
+                    "nombre": "Morado",
+                    "imagen": "assets/images/rosaMorada.jpg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Tulipan",
+            "precio": 1800,
+            "colores": [
+                {
+                    "nombre": "Blanco",
+                    "imagen": "assets/images/tulipanBlanco.jpg"
+                },
+                {
+                    "nombre": "Rosado",
+                    "imagen": "assets/images/tulipanRosado.jpg"
+                },
+                {
+                    "nombre": "Rojo",
+                    "imagen": "assets/images/tulipanRojo.jpg"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nombre": "Lirio",
+            "precio": 1800,
+            "colores": [
+                {
+                    "nombre": "Amarillo",
+                    "imagen": "assets/images/lirioAmarrillo.jpg"
+                },
+                {
+                    "nombre": "Rosado",
+                    "imagen": "assets/images/lirioRosado.jpg"
+                },
+                {
+                    "nombre": "Blanco",
+                    "imagen": "assets/images/lirioBlanco.png"
+                },
+                {
+                    "nombre": "Beige",
+                    "imagen": "assets/images/lirioBeige.jpg"
+                },
+                {
+                    "nombre": "Naranja",
+                    "imagen": "assets/images/lirioNaranja.jpg"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "nombre": "Girasol",
+            "precio": 1800,
+            "colores": [
+                {
+                    "nombre": "Amarillo",
+                    "imagen": "assets/images/girasol.jpg"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "nombre": "Gerberas",
+            "precio": 1700,
+            "imagen": "assets/images/gerberas.jpg",
+            "categoria": "flor",
+            "colores": [
+                "Rosa",
+                "Rojo",
+                "Naranja",
+                "Amarillo",
+                "Fucsia",
+                "Blanco",
+                "Rosado bebe"
+            ]
+        },
+        {
+            "id": 6,
+            "nombre": "Clavel",
+            "precio": 1800,
+            "colores": [
+                {
+                    "nombre": "Rojo",
+                    "imagen": "assets/images/clavelRojo.jpg"
+                },
+                {
+                    "nombre": "Rosado",
+                    "imagen": "assets/images/clavelRosado.jpg"
+                },
+                {
+                    "nombre": "Blanco",
+                    "imagen": "assets/images/clavelBlanco.jpg"
+                },
+                {
+                    "nombre": "Naranja",
+                    "imagen": "assets/images/clavelNaranja.jpg"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "nombre": "Hortencia",
+            "precio": 1800,
+            "colores": [
+                {
+                    "nombre": "Celeste",
+                    "imagen": "assets/images/hortenciasCelestes.jpg"
+                },
+                {
+                    "nombre": "Blanco",
+                    "imagen": "assets/images/hortenciasBlanco.jpg"
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "nombre": "Baby`s breath",
+            "precio": 1800,
+            "colores": [
+                {
+                    "nombre": "Blanco",
+                    "imagen": "assets/images/bbyBreath.jpg"
+                }
+            ]
+        }
+    ]
+}
