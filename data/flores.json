@@ -4,7 +4,7 @@
             "id": 1,
             "nombre": "Rosa",
             "precio": 1800,
-            "imagen": "assets/images/rosaRosada.jpg",
+            "imagen": "assets/images/rosa.jpg",
             "colores": ["Rojo", "Rosado", "Blanco", "Morado"]
         },
         {
@@ -47,7 +47,7 @@
             "id": 6,
             "nombre": "Clavel",
             "precio": 1800,
-            "imagen": "assets/images/clavelBlanco.jpg",
+            "imagen": "assets/images/clavel.jpg",
             "colores": ["Rojo", "Rosado", "Blanco", "Naranja"]
         },
         {
