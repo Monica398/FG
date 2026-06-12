@@ -82,21 +82,21 @@ DISEÑO PARA CELULARES - PÁGINA RAMOS
 @media (max-width: 768px) {
 
     /* Reduce los espacios de la página */
-    .pagina-ramos {
+    .pagina-detalles {
         padding: 50px 25px;
     }
 
     /* Centra el encabezado */
-    .encabezado-ramos {
+    .encabezado-detalles {
         text-align: center;
         margin-bottom: 40px;
     }
 
-    .encabezado-ramos h1 {
+    .encabezado-detalles h1 {
         font-size: 48px;
     }
 
-    .encabezado-ramos p {
+    .encabezado-detalles p {
         width: 100%;
         font-size: 16px;
         line-height: 28px;
@@ -120,19 +120,19 @@ DISEÑO PARA CELULARES - PÁGINA RAMOS
     }
 
     /* Ajusta las tarjetas al ancho del celular */
-    .tarjeta-ramo {
+    .tarjeta-detalles {
         width: 100%;
     }
 
-    .tarjeta-ramo img {
+    .tarjeta-detalles img {
         height: 280px;
     }
 
-    .info-ramo h3 {
+    .info-detalles h3 {
         font-size: 22px;
     }
 
-    .info-ramo p {
+    .info-detalles p {
         font-size: 18px;
     }
 }
