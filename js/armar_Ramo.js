@@ -35,7 +35,7 @@ const flores = [
         id: 5,
         nombre: "Gerberas",
         precio: 1700,
-        imagen: "assets/images/gerberas.jpg",
+        imagen: "assets/images/Gerberas.jpg",
         colores: ["Rosa", "Rojo", "Naranja", "Amarillo", "Fucsia", "Blanco"],
         cantidad: 0
     },
@@ -51,7 +51,7 @@ const flores = [
         id: 7,
         nombre: "Hortensia",
         precio: 1800,
-        imagen: "assets/images/hortensiasCelestes.jpg",
+        imagen: "assets/images/hortenciasCelestes.jpg",
         colores: ["Celeste", "Blanco"],
         cantidad: 0
     },
@@ -59,7 +59,7 @@ const flores = [
         id: 8,
         nombre: "Baby's Breath",
         precio: 1800,
-        imagen: "assets/images/babyBreath.jpg",
+        imagen: "assets/images/bbyBreath.jpg.jpg",
         colores: ["Blanco"],
         cantidad: 0
     }
