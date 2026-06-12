@@ -4,7 +4,7 @@
             "id": 1,
             "nombre": "Rosa",
             "precio": 1800,
-            "imagen": "assets/images/rosa.jpg",
+            "imagen": "assets/images/rosaRo.jpg",
             "colores": ["Rojo", "Rosado", "Blanco", "Morado"]
         },
         {
@@ -70,7 +70,7 @@
         {
             "id": 1,
             "nombre": "Tarjeta",
-            "precio": 2000,
+            "precio": 1500,
             "imagen": "assets/images/tarjeta.jpg"
         },
         {
