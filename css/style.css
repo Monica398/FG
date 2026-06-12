@@ -279,69 +279,6 @@ Confi de los botones en la imagen principal
     color: #f5ead7;
 }
 
-/*=============
-Confi del cuadro verde 
-===============*/
-
-/*<section class="beneficios">*/
-.beneficios {
-    /*Hace que el cuadro ocupe el 80% del ancho de la pantalla*/
-    width: 80%;
-    /*Agrega espacios POR FUERA del cuadro*/
-    margin: -40px
-        /* esto es lo que hace que el cuadro suba y quede un poco sobre la imagen principal*/
-        auto
-        /*centra el cuadro horizontalmente*/
-        60px
-        /*espacio abajo*/
-    ;
-    /*Cambia el color de fondo*/
-    background-color: #a7b178;
-    /*Redondea las esquinas del cuadro*/
-    border-radius: 12px;
-    /*Hace que los beneficios salgan uno a la par del otro*/
-    display: flex;
-    /*Hace que los elementos no se vean pegado y haya espacio entre ellos*/
-    justify-content: space-around;
-    /*Agrega espacio INTERNO al cuadro*/
-    padding: 30px
-        /*arriba y abajo*/
-        20px
-        /*izquierda,derecha*/
-    ;
-    /*Cambia el color del texto*/
-    color: #f5ead7;
-}
-
-.beneficio {
-    /*Hace que cada beneficio ocupe el 25% del ancho*/
-    width: 25%;
-    /*Centra el contenido horizontalmente*/
-    text-align: center;
-}
-
-/*imágenes que están dentro del cuadro verde*/
-.beneficio img {
-    /*Define el tamaño de las imágenes*/
-    width: 50px;
-    /*Agrega espacio debajo de la imagen*/
-    margin-bottom: 15px;
-}
-
-/*Son las letras que dicen FLORES FRESCAS,ENVÍOS A DOMICILIO y eso*/
-.beneficio h3 {
-    /*Cambia el tamaño de los títulos*/
-    font-size: 16px;
-    /*Agrega espacio debajo del título*/
-    margin-bottom: 10px;
-}
-
-/*Es lo que dice Seleccionadas cada día,Rápidos y seguros*/
-.beneficio p {
-    /*Cambia el tamaño del texto.*/
-    font-size: 14px;
-}
-
 /*estilos que van a heredar todos los elementos de las paginas*/
 
 /*===================
