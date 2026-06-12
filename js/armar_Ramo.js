@@ -59,7 +59,7 @@ const flores = [
         id: 8,
         nombre: "Baby's Breath",
         precio: 1800,
-        imagen: "assets/images/bbyBreath.jpg.jpg",
+        imagen: "assets/images/bbyBreath.jpg",
         colores: ["Blanco"],
         cantidad: 0
     }
