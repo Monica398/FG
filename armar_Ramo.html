@@ -228,18 +228,42 @@
 
                 <!-- LADO DERECHO: RESUMEN -->
                 <aside class="resumen-ramo">
+
                     <h3>Resumen del ramo</h3>
 
+                    <!-- Aquí JavaScript agregará las flores -->
                     <div id="listaResumen">
-                        <p>Aún no has agregado flores.</p>
+
+                        <p class="mensaje-vacio">
+                            Aún no has agregado flores.
+                        </p>
+
                     </div>
 
-                    <div class="total">
-                        <p>Total:</p>
-                        <strong id="totalRamo">₡0</strong>
+                    <div class="linea-resumen"></div>
+
+                    <div class="fila-total">
+                        <span>Subtotal flores</span>
+                        <strong id="subtotalFlores">₡0</strong>
                     </div>
 
-                    <button id="btnPagar" class="btn-pagar">Pagar</button>
+                    <div class="fila-total">
+                        <span>Extras</span>
+                        <strong id="totalExtras">₡0</strong>
+                    </div>
+
+                    <div class="fila-total">
+                        <span>Entrega</span>
+                        <strong>₡2.500</strong>
+                    </div>
+
+                    <div class="linea-resumen"></div>
+
+                    <div class="total-final">
+                        <span>Total estimado</span>
+                        <strong id="totalGeneral">₡0</strong>
+                    </div>
+
                 </aside>
 
         </section>

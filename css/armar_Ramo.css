@@ -413,7 +413,7 @@ BLOQUE: TARJETA Y CHOCOLATES
 }
 
 /* =========================
-   BLOQUE: INFORMACIÓN DE ENTREGA
+BLOQUE: INFORMACIÓN DE ENTREGA
 ========================= */
 
 .form-entrega {
@@ -448,4 +448,43 @@ BLOQUE: TARJETA Y CHOCOLATES
 
 .btn-pagar-entrega:hover {
     background-color: #c77f75;
+}
+/* =========================
+RESUMEN DEL RAMO
+========================= */
+
+/* Mensaje cuando todavía no hay flores */
+.mensaje-vacio {
+    color: #666;
+    margin: 20px 0;
+}
+
+/* Línea separadora */
+.linea-resumen {
+    border-top: 1px solid #d8b7a3;
+    margin: 18px 0;
+}
+
+/* Filas de subtotal, extras y entrega */
+.fila-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+/* Total final */
+.total-final {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-final span {
+    font-weight: bold;
+    color: #003b2d;
+}
+
+.total-final strong {
+    color: #d3968c;
+    font-size: 28px;
 }
