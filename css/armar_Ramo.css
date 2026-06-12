@@ -357,3 +357,57 @@ BLOQUE: OCASIÓN
     background-color: white;
     color: #333;
 }
+/* =========================
+BLOQUE: TARJETA Y CHOCOLATES
+========================= */
+
+.contenedor-extras {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.extra-card {
+    width: 220px;
+    border: 1px solid #e0cfc2;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: white;
+}
+
+.extra-card img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.extra-card h4 {
+    color: #003b2d;
+    margin-bottom: 5px;
+}
+
+.extra-card p {
+    color: #7f4f55;
+    font-weight: bold;
+}
+
+.mensaje-tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mensaje-tarjeta label {
+    color: #003b2d;
+    font-weight: bold;
+}
+
+.mensaje-tarjeta textarea {
+    height: 100px;
+    resize: none;
+    padding: 12px;
+    border: 1px solid #d8b7a3;
+    border-radius: 10px;
+}
