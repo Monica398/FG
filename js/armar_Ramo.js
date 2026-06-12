@@ -5,7 +5,8 @@ const flores = [
         precio: 1800,
         imagen: "assets/images/rosaRosada.jpg",
         colores: ["Rojo", "Rosado", "Blanco", "Morado"],
-        cantidad: 0
+        cantidad: 0,
+        colorSeleccionado: ""
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ const flores = [
         precio: 1800,
         imagen: "assets/images/tulipanRosado.jpg",
         colores: ["Blanco", "Rosado", "Rojo"],
-        cantidad: 0
+        cantidad: 0,
+        colorSeleccionado: ""
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ const flores = [
         precio: 1800,
         imagen: "assets/images/lirioRosado.jpg",
         colores: ["Amarillo", "Rosado", "Blanco", "Beige", "Naranja"],
-        cantidad: 0
+        cantidad: 0,
+        colorSeleccionado: ""
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ const flores = [
         precio: 1800,
         imagen: "assets/images/girasol.jpg",
         colores: ["Amarillo"],
-        cantidad: 0
+        cantidad: 0,
+        colorSeleccionado: ""
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ const flores = [
         precio: 1700,
         imagen: "assets/images/Gerberas.jpg",
         colores: ["Rosa", "Rojo", "Naranja", "Amarillo", "Fucsia", "Blanco"],
-        cantidad: 0
+        cantidad: 0,
+        colorSeleccionado: ""
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ const flores = [
         precio: 1800,
         imagen: "assets/images/clavelBlanco.jpg",
         colores: ["Rojo", "Rosado", "Blanco", "Naranja"],
-        cantidad: 0
+        cantidad: 0,
+        colorSeleccionado: ""
     },
     {
         id: 7,
@@ -53,7 +59,8 @@ const flores = [
         precio: 1800,
         imagen: "assets/images/hortenciasCelestes.jpg",
         colores: ["Celeste", "Blanco"],
-        cantidad: 0
+        cantidad: 0,
+        colorSeleccionado: ""
     },
     {
         id: 8,
@@ -61,7 +68,8 @@ const flores = [
         precio: 1800,
         imagen: "assets/images/bbyBreath.jpg",
         colores: ["Blanco"],
-        cantidad: 0
+        cantidad: 0,
+        colorSeleccionado: ""
     }
 ];
 
@@ -81,7 +89,11 @@ function mostrarFlores() {
         let botonesColores = "";
 
         for (const color of flor.colores) {
-            botonesColores += `<button class="color-${color}">${color}</button>`;
+            botonesColores +=
+                `<button 
+        class="color-${color}" 
+        onclick="seleccionarColor(${flor.id}, '${color}')"> ${color}
+        </button>`;
         }
 
         contenido += `
@@ -140,6 +152,19 @@ function restarCantidad(id) {
     mostrarFlores();
     actualizarResumen();
 }
+function seleccionarColor(id, color) {
+
+    for (const flor of flores) {
+
+        if (flor.id === id) {
+            flor.colorSeleccionado = color;
+        }
+
+    }
+
+    mostrarFlores();
+    actualizarResumen();
+}
 function actualizarResumen() {
 
     let contenidoResumen = "";
@@ -156,9 +181,9 @@ function actualizarResumen() {
             contenidoResumen += `
                 <div class="item-resumen">
                     <p>
-                        ${flor.nombre} x${flor.cantidad}
+                    ${flor.nombre} x${flor.cantidad}<br>
+                    Color: ${flor.colorSeleccionado}
                     </p>
-
                     <strong>
                         ₡${totalFlor}
                     </strong>
