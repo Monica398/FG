@@ -108,44 +108,53 @@
                             </select>
                         </div>
 
-                </div>
-                <!-- AQUÍ SE VAN A CARGAR LAS FLORES DESDE JSON -->
-                <div id="contenedorFlores" class="contenedor-flores">
-                    <!-- JavaScript colocará aquí las tarjetas -->
-                </div>
+                    </div>
+                    <!-- AQUÍ SE VAN A CARGAR LAS FLORES DESDE JSON -->
+                    <div id="contenedorFlores" class="contenedor-flores">
+                        <!-- JavaScript colocará aquí las tarjetas -->
+                    </div>
 
-                <!-- PERSONALIZAR RAMO -->
-                <div class="personalizar">
-                    <h3>Personalizar ramo</h3>
+                    <!-- SECCIÓN 2: OCASIÓN -->
+                    <div class="bloque-armar">
 
-                    <label for="ocasion">Ocasión</label>
-                    <select id="ocasion">
-                        <option value="">Selecciona una ocasión</option>
-                        <option value="Cumpleaños">Cumpleaños</option>
-                        <option value="Aniversario">Aniversario</option>
-                        <option value="Graduación">Graduación</option>
-                        <option value="Amor y amistad">Amor y amistad</option>
-                        <option value="Otro">Otro</option>
-                    </select>
-                </div>
+                        <div class="titulo-bloque">
+                            <span>2</span>
+                            <h3>Ocasión</h3>
+                        </div>
 
-            </div>
+                        <div class="campo-ocasion">
+                            <label for="ocasion">Selecciona la ocasión de tu ramo</label>
 
-            <!-- LADO DERECHO: RESUMEN -->
-            <aside class="resumen-ramo">
-                <h3>Resumen del ramo</h3>
+                            <select id="ocasion">
+                                <option value="">Selecciona una ocasión</option>
+                                <option value="Cumpleaños">Cumpleaños</option>
+                                <option value="Aniversario">Aniversario</option>
+                                <option value="Graduación">Graduación</option>
+                                <option value="Amor">Amor</option>
+                                <option value="Agradecimiento">Agradecimiento</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
 
-                <div id="listaResumen">
-                    <p>Aún no has agregado flores.</p>
-                </div>
+                    </div>
 
-                <div class="total">
-                    <p>Total:</p>
-                    <strong id="totalRamo">₡0</strong>
                 </div>
 
-                <button id="btnPagar" class="btn-pagar">Pagar</button>
-            </aside>
+                <!-- LADO DERECHO: RESUMEN -->
+                <aside class="resumen-ramo">
+                    <h3>Resumen del ramo</h3>
+
+                    <div id="listaResumen">
+                        <p>Aún no has agregado flores.</p>
+                    </div>
+
+                    <div class="total">
+                        <p>Total:</p>
+                        <strong id="totalRamo">₡0</strong>
+                    </div>
+
+                    <button id="btnPagar" class="btn-pagar">Pagar</button>
+                </aside>
 
         </section>
 

@@ -126,7 +126,7 @@ select {
     cursor: pointer;
 }
 /* =========================
-   COLORES DE LAS FLORES
+COLORES DE LAS FLORES
 ========================= */
 
 .color-Rojo {
@@ -332,4 +332,28 @@ BLOQUE: ELIGE TUS FLORES
 .btn-limpiar:hover {
     background-color: #d3968c;
     color: white;
+}
+/* =========================
+BLOQUE: OCASIÓN
+========================= */
+
+.campo-ocasion {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.campo-ocasion label {
+    color: #003b2d;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.campo-ocasion select {
+    width: 360px;
+    padding: 12px;
+    border: 1px solid #d8b7a3;
+    border-radius: 10px;
+    background-color: white;
+    color: #333;
 }
