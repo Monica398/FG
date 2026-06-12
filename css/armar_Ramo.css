@@ -488,3 +488,51 @@ RESUMEN DEL RAMO
     color: #d3968c;
     font-size: 28px;
 }
+/* =========================
+RESPONSIVE - ARMAR RAMO
+========================= */
+@media (max-width: 768px) {
+
+    .armar-ramo {
+        padding: 40px 25px;
+    }
+
+    .contenedor-armar {
+        flex-direction: column;
+    }
+
+    .zona-productos,
+    .resumen-ramo {
+        width: 100%;
+    }
+
+    .resumen-ramo {
+        position: static;
+    }
+
+    .contenedor-flores {
+        grid-template-columns: 1fr;
+    }
+
+    .filtros-armar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .campo-filtro select,
+    .campo-ocasion select {
+        width: 100%;
+    }
+
+    .contenedor-extras {
+        flex-direction: column;
+    }
+
+    .extra-card {
+        width: 100%;
+    }
+
+    .form-entrega {
+        grid-template-columns: 1fr;
+    }
+}
