@@ -72,11 +72,29 @@ const flores = [
         colorSeleccionado: ""
     }
 ];
+const extras = [
+    {
+        nombre: "Tarjeta",
+        precio: 1500,
+        seleccionado: false
+    },
+    {
+        nombre: "Chocolates",
+        precio: 3000,
+        seleccionado: false
+    }
+];
 
 const contenedorFlores = document.getElementById("contenedorFlores");
 const listaResumen = document.getElementById("listaResumen");
 const subtotalFlores = document.getElementById("subtotalFlores");
 const totalGeneral = document.getElementById("totalGeneral");
+const totalExtrasTexto =document.getElementById("totalExtras");
+
+const checkTarjeta = document.getElementById("tarjeta");
+const checkChocolates = document.getElementById("chocolates");
+checkTarjeta.addEventListener("change", actualizarResumen);
+checkChocolates.addEventListener("change", actualizarResumen);
 
 const costoEntrega = 2500;
 
@@ -168,7 +186,15 @@ function seleccionarColor(id, color) {
 function actualizarResumen() {
 
     let contenidoResumen = "";
-    let subtotal = 0;
+    let totalExtras = 0;
+
+    if (checkTarjeta.checked) {
+        totalExtras += 1500;
+    }
+
+    if (checkChocolates.checked) {
+        totalExtras += 3000;
+    }
 
     for (const flor of flores) {
 
