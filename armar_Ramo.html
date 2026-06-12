@@ -55,73 +55,101 @@
     <!-- PAGINA RAMOS -->
     <main class="armar-ramo">
 
-    <!-- TÍTULO DE LA PÁGINA -->
-    <section class="titulo-armar">
-        <h2>Armar ramo</h2>
-        <p>Elige tus flores, colores y detalles para crear un ramo especial.</p>
-    </section>
+        <!-- TÍTULO DE LA PÁGINA -->
+        <section class="titulo-armar">
+            <h2>Armar ramo</h2>
+            <p>Elige tus flores, colores y detalles para crear un ramo especial.</p>
+        </section>
 
-    <!-- CONTENEDOR PRINCIPAL -->
-    <section class="contenedor-armar">
+        <!-- CONTENEDOR PRINCIPAL -->
+        <section class="contenedor-armar">
 
-        <!-- LADO IZQUIERDO: FLORES Y OPCIONES -->
-        <div class="zona-productos">
+            <!-- LADO IZQUIERDO: FLORES Y OPCIONES -->
+            <div class="zona-productos">
 
-            <!-- FILTROS -->
-            <div class="filtros">
-                <h3>Filtrar flores</h3>
+                <!-- FILTROS -->
+                <!-- SECCIÓN 1: ELEGIR FLORES -->
+                <div class="bloque-armar">
 
-                <select id="filtroColor">
-                    <option value="todos">Todos los colores</option>
-                    <option value="Rojo">Rojo</option>
-                    <option value="Rosa">Rosa</option>
-                    <option value="Blanco">Blanco</option>
-                    <option value="Amarillo">Amarillo</option>
-                    <option value="Morado">Morado</option>
-                </select>
+                    <div class="titulo-bloque">
+                        <span>1</span>
+                        <h3>Elige tus flores</h3>
+                    </div>
+
+                    <div class="filtros-armar">
+
+                        <div class="campo-filtro">
+                            <label>Filtrar por tipo</label>
+                            <select>
+                                <option>Todas</option>
+                                <option>Rosas</option>
+                                <option>Tulipanes</option>
+                                <option>Lirios</option>
+                                <option>Gerberas</option>
+                                <option>Hortencias</option>
+                                <option>Girasoles</option>
+                                <option>Claveles</option>
+                                <option>Baby`s Breath</option>
+                            </select>
+                        </div>
+
+                        <div class="campo-filtro">
+                            <label>Filtrar por color</label>
+                            <select>
+                                <option>Todos</option>
+                                <option>Rojo</option>
+                                <option>Rosado</option>
+                                <option>Blanco</option>
+                                <option>Amarillo</option>
+                                <option>Naranja</option>
+                                <option>Morado</option>
+                                <option>Beige</option>
+                                <option>Celeste</option>
+                            </select>
+                        </div>
+
+                </div>
+                <!-- AQUÍ SE VAN A CARGAR LAS FLORES DESDE JSON -->
+                <div id="contenedorFlores" class="contenedor-flores">
+                    <!-- JavaScript colocará aquí las tarjetas -->
+                </div>
+
+                <!-- PERSONALIZAR RAMO -->
+                <div class="personalizar">
+                    <h3>Personalizar ramo</h3>
+
+                    <label for="ocasion">Ocasión</label>
+                    <select id="ocasion">
+                        <option value="">Selecciona una ocasión</option>
+                        <option value="Cumpleaños">Cumpleaños</option>
+                        <option value="Aniversario">Aniversario</option>
+                        <option value="Graduación">Graduación</option>
+                        <option value="Amor y amistad">Amor y amistad</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+
             </div>
 
-            <!-- AQUÍ SE VAN A CARGAR LAS FLORES DESDE JSON -->
-            <div id="contenedorFlores" class="contenedor-flores">
-                <!-- JavaScript colocará aquí las tarjetas -->
-            </div>
+            <!-- LADO DERECHO: RESUMEN -->
+            <aside class="resumen-ramo">
+                <h3>Resumen del ramo</h3>
 
-            <!-- PERSONALIZAR RAMO -->
-            <div class="personalizar">
-                <h3>Personalizar ramo</h3>
+                <div id="listaResumen">
+                    <p>Aún no has agregado flores.</p>
+                </div>
 
-                <label for="ocasion">Ocasión</label>
-                <select id="ocasion">
-                    <option value="">Selecciona una ocasión</option>
-                    <option value="Cumpleaños">Cumpleaños</option>
-                    <option value="Aniversario">Aniversario</option>
-                    <option value="Graduación">Graduación</option>
-                    <option value="Amor y amistad">Amor y amistad</option>
-                    <option value="Otro">Otro</option>
-                </select>
-            </div>
+                <div class="total">
+                    <p>Total:</p>
+                    <strong id="totalRamo">₡0</strong>
+                </div>
 
-        </div>
+                <button id="btnPagar" class="btn-pagar">Pagar</button>
+            </aside>
 
-        <!-- LADO DERECHO: RESUMEN -->
-        <aside class="resumen-ramo">
-            <h3>Resumen del ramo</h3>
+        </section>
 
-            <div id="listaResumen">
-                <p>Aún no has agregado flores.</p>
-            </div>
-
-            <div class="total">
-                <p>Total:</p>
-                <strong id="totalRamo">₡0</strong>
-            </div>
-
-            <button id="btnPagar" class="btn-pagar">Pagar</button>
-        </aside>
-
-    </section>
-
-</main>
+    </main>
     <!-- ===================================================== -->
     <!-- FOOTER -->
     <!-- ===================================================== -->
@@ -158,7 +186,7 @@
         </p>
     </footer>
 
-<script src="js/armar_Ramo.js"></script>
+    <script src="js/armar_Ramo.js"></script>
 </body>
 
 </html>
