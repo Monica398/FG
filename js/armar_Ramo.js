@@ -186,6 +186,7 @@ function seleccionarColor(id, color) {
 function actualizarResumen() {
 
     let contenidoResumen = "";
+    let subtotal = 0;
     let totalExtras = 0;
 
     if (checkTarjeta.checked) {
