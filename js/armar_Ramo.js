@@ -1,77 +1,4 @@
-const flores = [
-    {
-        id: 1,
-        nombre: "Rosa",
-        precio: 1800,
-        imagen: "assets/images/rosaRosada.jpg",
-        colores: ["Rojo", "Rosado", "Blanco", "Morado"],
-        cantidad: 0,
-        colorSeleccionado: ""
-    },
-    {
-        id: 2,
-        nombre: "Tulipán",
-        precio: 1800,
-        imagen: "assets/images/tulipanRosado.jpg",
-        colores: ["Blanco", "Rosado", "Rojo"],
-        cantidad: 0,
-        colorSeleccionado: ""
-    },
-    {
-        id: 3,
-        nombre: "Lirio",
-        precio: 1800,
-        imagen: "assets/images/lirioRosado.jpg",
-        colores: ["Amarillo", "Rosado", "Blanco", "Beige", "Naranja"],
-        cantidad: 0,
-        colorSeleccionado: ""
-    },
-    {
-        id: 4,
-        nombre: "Girasol",
-        precio: 1800,
-        imagen: "assets/images/girasol.jpg",
-        colores: ["Amarillo"],
-        cantidad: 0,
-        colorSeleccionado: ""
-    },
-    {
-        id: 5,
-        nombre: "Gerberas",
-        precio: 1700,
-        imagen: "assets/images/Gerberas.jpg",
-        colores: ["Rosa", "Rojo", "Naranja", "Amarillo", "Fucsia", "Blanco"],
-        cantidad: 0,
-        colorSeleccionado: ""
-    },
-    {
-        id: 6,
-        nombre: "Clavel",
-        precio: 1800,
-        imagen: "assets/images/clavelBlanco.jpg",
-        colores: ["Rojo", "Rosado", "Blanco", "Naranja"],
-        cantidad: 0,
-        colorSeleccionado: ""
-    },
-    {
-        id: 7,
-        nombre: "Hortensia",
-        precio: 1800,
-        imagen: "assets/images/hortenciasCelestes.jpg",
-        colores: ["Celeste", "Blanco"],
-        cantidad: 0,
-        colorSeleccionado: ""
-    },
-    {
-        id: 8,
-        nombre: "Baby's Breath",
-        precio: 1800,
-        imagen: "assets/images/bbyBreath.jpg",
-        colores: ["Blanco"],
-        cantidad: 0,
-        colorSeleccionado: ""
-    }
-];
+let flores = [];
 const extras = [
     {
         nombre: "Tarjeta",
@@ -84,7 +11,6 @@ const extras = [
         seleccionado: false
     }
 ];
-
 const contenedorFlores = document.getElementById("contenedorFlores");
 const listaResumen = document.getElementById("listaResumen");
 const subtotalFlores = document.getElementById("subtotalFlores");
@@ -230,5 +156,10 @@ function actualizarResumen() {
     totalGeneral.innerHTML ="₡" + (subtotal + totalExtras + costoEntrega);
     totalExtrasTexto.innerHTML ="₡" + totalExtras;
 }
-mostrarFlores();
-actualizarResumen();
+fetch("data/flores.json")
+    .then(respuesta => respuesta.json())
+    .then(datos => {
+        flores = datos;
+        mostrarFlores();
+        actualizarResumen();
+    });
