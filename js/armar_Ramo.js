@@ -4,7 +4,7 @@ const flores = [
         id: 1,
         nombre: "Rosa",
         precio: 1800,
-        imagen: "assets/images/rosa.jpg",
+        imagen: "assets/images/rosaRosada.jpg",
         colores: ["Rojo", "Rosado", "Blanco", "Morado"],
         cantidad: 0
     }
@@ -12,7 +12,7 @@ const flores = [
 ];
 
 const contenedorFlores =
-document.getElementById("contenedorFlores");
+    document.getElementById("contenedorFlores");
 
 function mostrarFlores() {
 
@@ -91,8 +91,6 @@ function restarCantidad(id) {
         }
 
     }
-
     mostrarFlores();
 }
-
 mostrarFlores();
