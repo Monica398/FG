@@ -488,6 +488,9 @@ DISEÑO RESPONSIVO
         max-width: 450px;
         height: auto;
     }
+    .cerezos{
+        height: 400px;
+    }
 
     .botones {
         flex-direction: column;
