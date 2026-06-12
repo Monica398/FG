@@ -125,6 +125,46 @@ select {
     padding: 0;
     cursor: pointer;
 }
+/* =========================
+   COLORES DE LAS FLORES
+========================= */
+
+.color-Rojo {
+    background-color: #c91818;
+}
+
+.color-Rosado,
+.color-Rosa {
+    background-color: #f28ca8;
+}
+
+.color-Blanco {
+    background-color: #ffffff;
+}
+
+.color-Morado {
+    background-color: #9b6bb3;
+}
+
+.color-Amarillo {
+    background-color: #f5c542;
+}
+
+.color-Beige {
+    background-color: #e8d6b8;
+}
+
+.color-Naranja {
+    background-color: #f28c28;
+}
+
+.color-Fucsia {
+    background-color: #e83e8c;
+}
+
+.color-Celeste {
+    background-color: #7db7d9;
+}
 .colores button:hover {
     transform: scale(1.1);
 }

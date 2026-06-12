@@ -76,7 +76,7 @@ function mostrarFlores() {
         let botonesColores = "";
 
         for (const color of flor.colores) {
-            botonesColores += `<button>${color}</button>`;
+            botonesColores += `<button class="color-${color}">${color}</button>`;
         }
 
         contenido += `
