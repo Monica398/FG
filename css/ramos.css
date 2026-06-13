@@ -74,6 +74,11 @@ PAGINA RAMOS
 .info-ramo button img {
     width: 28px;
     height: 28px;
+    transition: 0.3s;
+}
+
+.info-ramo button img:hover {
+    transform: scale(1.2);
 }
 /* =====================================================
 DISEÑO PARA CELULARES - PÁGINA RAMOS
