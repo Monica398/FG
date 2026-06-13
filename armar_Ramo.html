@@ -80,31 +80,31 @@
 
                         <div class="campo-filtro">
                             <label>Filtrar por tipo</label>
-                            <select>
-                                <option>Todas</option>
-                                <option>Rosas</option>
-                                <option>Tulipanes</option>
-                                <option>Lirios</option>
-                                <option>Gerberas</option>
-                                <option>Hortencias</option>
-                                <option>Girasoles</option>
-                                <option>Claveles</option>
-                                <option>Baby`s Breath</option>
+                            <select id="filtroTipo">
+                                <option value="Todas">Todas</option>
+                                <option value="Rosa">Rosas</option>
+                                <option value="Tulipán">Tulipanes</option>
+                                <option value="Lirio">Lirios</option>
+                                <option value="Gerberas">Gerberas</option>
+                                <option value="Hortensia">Hortensias</option>
+                                <option value="Girasol">Girasoles</option>
+                                <option value="Clavel">Claveles</option>
+                                <option value="Baby's Breath">Baby's Breath</option>
                             </select>
                         </div>
 
                         <div class="campo-filtro">
                             <label>Filtrar por color</label>
-                            <select>
-                                <option>Todos</option>
-                                <option>Rojo</option>
-                                <option>Rosado</option>
-                                <option>Blanco</option>
-                                <option>Amarillo</option>
-                                <option>Naranja</option>
-                                <option>Morado</option>
-                                <option>Beige</option>
-                                <option>Celeste</option>
+                            <select id="filtroColor">
+                                <option value="Todos">Todos</option>
+                                <option value="Rojo">Rojo</option>
+                                <option value="Rosado">Rosado</option>
+                                <option value="Blanco">Blanco</option>
+                                <option value="Amarillo">Amarillo</option>
+                                <option value="Naranja">Naranja</option>
+                                <option value="Morado">Morado</option>
+                                <option value="Beige">Beige</option>
+                                <option value="Celeste">Celeste</option>
                             </select>
                         </div>
 
@@ -225,47 +225,47 @@
                     </div>
 
                 </div>
+            </div>
+
+            <!-- LADO DERECHO: RESUMEN -->
+            <aside class="resumen-ramo">
+
+                <h3>Resumen del ramo</h3>
+
+                <!-- Aquí JavaScript agregará las flores -->
+                <div id="listaResumen">
+
+                    <p class="mensaje-vacio">
+                        Aún no has agregado flores.
+                    </p>
+
                 </div>
 
-                <!-- LADO DERECHO: RESUMEN -->
-                <aside class="resumen-ramo">
+                <div class="linea-resumen"></div>
 
-                    <h3>Resumen del ramo</h3>
+                <div class="fila-total">
+                    <span>Subtotal flores</span>
+                    <strong id="subtotalFlores">₡0</strong>
+                </div>
 
-                    <!-- Aquí JavaScript agregará las flores -->
-                    <div id="listaResumen">
+                <div class="fila-total">
+                    <span>Extras</span>
+                    <strong id="totalExtras">₡0</strong>
+                </div>
 
-                        <p class="mensaje-vacio">
-                            Aún no has agregado flores.
-                        </p>
+                <div class="fila-total">
+                    <span>Entrega</span>
+                    <strong>₡2.500</strong>
+                </div>
 
-                    </div>
+                <div class="linea-resumen"></div>
 
-                    <div class="linea-resumen"></div>
+                <div class="total-final">
+                    <span>Total estimado</span>
+                    <strong id="totalGeneral">₡0</strong>
+                </div>
 
-                    <div class="fila-total">
-                        <span>Subtotal flores</span>
-                        <strong id="subtotalFlores">₡0</strong>
-                    </div>
-
-                    <div class="fila-total">
-                        <span>Extras</span>
-                        <strong id="totalExtras">₡0</strong>
-                    </div>
-
-                    <div class="fila-total">
-                        <span>Entrega</span>
-                        <strong>₡2.500</strong>
-                    </div>
-
-                    <div class="linea-resumen"></div>
-
-                    <div class="total-final">
-                        <span>Total estimado</span>
-                        <strong id="totalGeneral">₡0</strong>
-                    </div>
-
-                </aside>
+            </aside>
 
         </section>
 
@@ -293,10 +293,10 @@
         <div class="footer-links">
 
             <h3>Enlaces rápidos</h3>
-                <a href="index.html">Inicio</a>
-                <a href="#nosotros">Nosotros</a>
-                <a href="ramos.html">Ramos</a>
-                <a href="ocasiones.html">Ocasiones</a>
+            <a href="index.html">Inicio</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="ramos.html">Ramos</a>
+            <a href="ocasiones.html">Ocasiones</a>
         </div>
 
 

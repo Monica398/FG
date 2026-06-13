@@ -12,6 +12,12 @@ const checkChocolates = document.getElementById("chocolates");
 checkTarjeta.addEventListener("change", actualizarResumen);
 checkChocolates.addEventListener("change", actualizarResumen);
 
+const filtroTipo = document.getElementById("filtroTipo");
+const filtroColor = document.getElementById("filtroColor");
+
+filtroTipo.addEventListener("change", mostrarFlores);
+filtroColor.addEventListener("change", mostrarFlores);
+
 const costoEntrega = 2500;
 
 function mostrarFlores() {
@@ -20,11 +26,19 @@ function mostrarFlores() {
 
     for (const flor of flores) {
 
+        if (filtroTipo.value !== "Todas" && flor.nombre !== filtroTipo.value) {
+            continue;
+        }
+
+        if (filtroColor.value !== "Todos" && !flor.colores.includes(filtroColor.value)) {
+            continue;
+        }
+
         let botonesColores = "";
 
         for (const color of flor.colores) {
             botonesColores +=
-        `<button class="color-${color}" onclick="seleccionarColor(${flor.id}, '${color}')"> ${color} </button>`;
+                `<button class="color-${color}" onclick="seleccionarColor(${flor.id}, '${color}')"> ${color} </button>`;
         }
 
         contenido += `
@@ -38,14 +52,12 @@ function mostrarFlores() {
 
                 <p class="texto-colores">Colores disponibles:</p>
                 <div class="colores">
-                ${botonesColores}
+                    ${botonesColores}
                 </div>
 
                 <div class="cantidad">
                     <button onclick="restarCantidad(${flor.id})">-</button>
-
                     <span>${flor.cantidad}</span>
-
                     <button onclick="sumarCantidad(${flor.id})">+</button>
                 </div>
 
