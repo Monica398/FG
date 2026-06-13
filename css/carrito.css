@@ -6,6 +6,14 @@ PÁGINA CARRITO
     background-color: #f5ead7;
     padding: 80px 90px;
 }
+.icono-carrito img {
+    width: 30px;
+}
+
+.icono-carrito {
+    display: flex;
+    align-items: center;
+}
 
 /* =====================================================
 ENCABEZADO
@@ -123,6 +131,7 @@ RESUMEN
 .btn-finalizar:hover {
     background-color: #005540;
 }
+
 
 /* =====================================================
 RESPONSIVE
