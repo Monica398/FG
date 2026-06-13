@@ -125,6 +125,12 @@ select {
     padding: 0;
     cursor: pointer;
 }
+.descripcion-flor {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 18px;
+}
 /* =========================
 COLORES DE LAS FLORES
 ========================= */

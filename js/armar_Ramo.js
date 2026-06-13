@@ -1,11 +1,11 @@
 let flores = [];
-let extras=[];
+let extras = [];
 
 const contenedorFlores = document.getElementById("contenedorFlores");
 const listaResumen = document.getElementById("listaResumen");
 const subtotalFlores = document.getElementById("subtotalFlores");
 const totalGeneral = document.getElementById("totalGeneral");
-const totalExtrasTexto =document.getElementById("totalExtras");
+const totalExtrasTexto = document.getElementById("totalExtras");
 
 const checkTarjeta = document.getElementById("tarjeta");
 const checkChocolates = document.getElementById("chocolates");
@@ -49,11 +49,13 @@ function mostrarFlores() {
                 <h4>${flor.nombre}</h4>
 
                 <p class="precio">₡${flor.precio} c/u</p>
-
+                <p class="descripcion-flor">${flor.descripcion}</p>
                 <p class="texto-colores">Colores disponibles:</p>
                 <div class="colores">
                     ${botonesColores}
                 </div>
+
+                
 
                 <div class="cantidad">
                     <button onclick="restarCantidad(${flor.id})">-</button>
@@ -155,8 +157,8 @@ function actualizarResumen() {
     }
 
     subtotalFlores.innerHTML = "₡" + subtotal;
-    totalGeneral.innerHTML ="₡" + (subtotal + totalExtras + costoEntrega);
-    totalExtrasTexto.innerHTML ="₡" + totalExtras;
+    totalGeneral.innerHTML = "₡" + (subtotal + totalExtras + costoEntrega);
+    totalExtrasTexto.innerHTML = "₡" + totalExtras;
 }
 fetch("data/flores.json")
     .then(respuesta => respuesta.json())
