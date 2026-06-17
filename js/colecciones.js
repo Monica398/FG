@@ -1,0 +1,36 @@
+// Traemos el contenedor donde se van a mostrar las colecciones
+const contenedorColecciones = document.getElementById("contenedorColecciones");
+
+// Esta función muestra las colecciones en la página
+function mostrarColecciones(colecciones) {
+
+    // Aquí se va guardando el HTML
+    let contenido = "";
+
+    // Recorremos cada colección que viene del JSON
+    for (const coleccion of colecciones) {
+
+        contenido += `
+            <a href="${coleccion.enlace}" class="tarjeta-coleccion">
+
+                <img src="${coleccion.imagen}" alt="${coleccion.titulo}">
+
+                <div class="tarjeta-info ${coleccion.clase}">
+                    <h3>${coleccion.titulo}</h3>
+                    <p>VER COLECCIÓN</p>
+                </div>
+
+            </a>
+        `;
+    }
+
+    // Mostramos las tarjetas en el HTML
+    contenedorColecciones.innerHTML = contenido;
+}
+
+// Cargamos el archivo JSON
+fetch("data/colecciones.json")
+    .then(respuesta => respuesta.json())
+    .then(datos => {
+        mostrarColecciones(datos.colecciones);
+    });
