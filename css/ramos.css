@@ -1,6 +1,7 @@
 /*=============
-PAGINA RAMOS
+PÁGINA RAMOS
 ===============*/
+
 .pagina-ramos {
     padding: 90px 120px;
     background-color: #f5ead7;
@@ -25,12 +26,14 @@ PAGINA RAMOS
     color: #333;
 }
 
+/* Grid de ramos en computadora */
 .lista-ramos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 35px;
 }
 
+/* Tarjeta individual */
 .tarjeta-ramo {
     background-color: #f5ead7;
     border-radius: 10px;
@@ -62,6 +65,7 @@ PAGINA RAMOS
     color: #2b2b2b;
 }
 
+/* Botón del carrito dentro de la tarjeta */
 .info-ramo button {
     position: absolute;
     right: 20px;
@@ -80,12 +84,36 @@ PAGINA RAMOS
 .info-ramo button img:hover {
     transform: scale(1.2);
 }
-/* =====================================================
-DISEÑO PARA CELULARES - PÁGINA RAMOS
-===================================================== */
-@media (max-width: 768px) {
 
-    /* Reduce los espacios de la página */
+/* =========================
+MEDIA QUERY TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    /* Reduce el espacio de los lados */
+    .pagina-ramos {
+        padding: 70px 50px;
+    }
+
+    /* En tablet pasa de 4 columnas a 2 columnas */
+    .lista-ramos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* El texto puede ocupar todo el ancho */
+    .encabezado-ramos p {
+        width: 100%;
+    }
+}
+
+/* =========================
+MEDIA QUERY MÓVIL
+========================= */
+
+@media (max-width: 700px) {
+
+    /* Reduce más el espacio en celular */
     .pagina-ramos {
         padding: 50px 25px;
     }
@@ -106,7 +134,7 @@ DISEÑO PARA CELULARES - PÁGINA RAMOS
         line-height: 28px;
     }
 
-    /* Acomoda los botones del filtro */
+    /* Si tienes filtros, se acomodan en el centro */
     .filtros {
         justify-content: center;
         gap: 10px;
@@ -117,13 +145,12 @@ DISEÑO PARA CELULARES - PÁGINA RAMOS
         max-width: 280px;
     }
 
-    /* Hace que los ramos salgan uno debajo del otro */
+    /* En celular los ramos salen uno debajo del otro */
     .lista-ramos {
         grid-template-columns: 1fr;
         gap: 30px;
     }
 
-    /* Ajusta las tarjetas al ancho del celular */
     .tarjeta-ramo {
         width: 100%;
     }
@@ -138,5 +165,24 @@ DISEÑO PARA CELULARES - PÁGINA RAMOS
 
     .info-ramo p {
         font-size: 18px;
+    }
+}
+
+/* =========================
+MEDIA QUERY MÓVIL PEQUEÑO
+========================= */
+
+@media (max-width: 420px) {
+
+    .pagina-ramos {
+        padding: 40px 18px;
+    }
+
+    .encabezado-ramos h1 {
+        font-size: 38px;
+    }
+
+    .tarjeta-ramo img {
+        height: 240px;
     }
 }
