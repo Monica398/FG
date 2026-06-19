@@ -11,9 +11,7 @@ FOOTER
 .footer-contenido {
     display: flex;
     justify-content: center;
-    /*este gap separa los enlaces del contacto*/
     gap: 160px;
-    
     /*este margin esta separando el copiryth y los enclaces*/
     margin-bottom: 30px;
 }
