@@ -466,8 +466,7 @@ VALIDAR QUE EXISTA AL MENOS UNA FLOR
         return;
     }
 
-    // Revisamos si existe un usuario activo en localStorage.
-    const usuarioActivo = localStorage.getItem("usuarioActivo");
+   
 
     // Si no hay usuario activo, significa que no se ha registrado.
     if (usuarioActivo === null) {
