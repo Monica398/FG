@@ -2,14 +2,30 @@
 <html lang="es">
 
 <head>
+    <!-- ===================================================== -->
+    <!-- CONFIGURACIÓN PRINCIPAL DE LA PÁGINA -->
+    <!-- ===================================================== -->
+    <!-- Esta parte no se ve directamente en la página.
+    Sirve para configurar idioma, caracteres, diseño responsivo,
+    archivos CSS y título de la pestaña. -->
+
     <meta charset="UTF-8">
+    <!-- Permite usar tildes, ñ y caracteres especiales. -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la página se adapte correctamente a celulares y tablets. -->
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/armar_Ramo.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <!-- Conecta el CSS general del sitio Sakura. -->
 
-    <title> Armar Ramos | Sakura</title>
+    <link rel="stylesheet" href="css/armar_Ramo.css">
+    <!-- Conecta el CSS específico de la página Armar Ramo. -->
+
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Conecta el CSS del pie de página. -->
+
+    <title>Armar Ramos | Sakura</title>
+    <!-- Texto que aparece en la pestaña del navegador. -->
 </head>
 
 <body>
@@ -17,220 +33,400 @@
     <!-- ===================================================== -->
     <!-- HEADER / BARRA DE NAVEGACIÓN -->
     <!-- ===================================================== -->
+    <!-- Este bloque se refleja en la parte superior de la página.
+    Contiene el logo, el menú de navegación y el icono de usuario. -->
 
     <header class="header">
 
         <!-- LOGO -->
+        <!-- Se refleja en la esquina superior izquierda de la página. -->
         <div class="logo">
             <h1>Sakura</h1>
+            <!-- Muestra el nombre principal de la floristería. -->
+
             <p>LA FLORISTERÍA</p>
+            <!-- Muestra el subtítulo debajo del logo. -->
         </div>
 
-        <!-- Checkbox oculto para abrir/cerrar el menú -->
+        <!-- MENÚ RESPONSIVO -->
+        <!-- Este checkbox ayuda a abrir y cerrar el menú en celular. -->
         <input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-        <!-- Botón hamburguesa -->
+        <!-- BOTÓN HAMBURGUESA -->
+        <!-- Se refleja en pantallas pequeñas para abrir el menú. -->
         <label for="menu-toggle" class="menu-button">
             <span></span>
+            <!-- Línea 1 del botón hamburguesa. -->
+
             <span></span>
+            <!-- Línea 2 del botón hamburguesa. -->
+
             <span></span>
+            <!-- Línea 3 del botón hamburguesa. -->
         </label>
 
         <!-- MENÚ DE NAVEGACIÓN -->
+        <!-- Se refleja como los enlaces principales del sitio. -->
         <nav class="menu">
             <ul>
                 <li><a href="index.html">INICIO</a></li>
+                <!-- Lleva a la página principal. -->
+
                 <li><a href="ramos.html">RAMOS</a></li>
+                <!-- Lleva a la página de ramos prediseñados. -->
+
                 <li><a href="armar_Ramo.html">ARMAR RAMO</a></li>
+                <!-- Lleva a esta página de armar ramo. -->
+
                 <li><a href="ocasiones.html">OCASIONES</a></li>
+                <!-- Lleva a la página de ocasiones. -->
+
                 <li><a href="detalles.html">DETALLES</a></li>
-                <li><a href="#nosotros">NOSOTROS</a></li>
+                <!-- Lleva a la página de detalles. -->
+
+                <li><a href="index.html#nosotros">NOSOTROS</a></li>
+                <!-- Lleva a la sección Nosotros en la página principal. -->
+
                 <li><a href="#contacto">CONTACTO</a></li>
+                <!-- Baja directamente al footer/contacto de esta página. -->
             </ul>
         </nav>
 
-        <!-- ICONOS DEL MENÚ -->
+        <!-- ICONO DE USUARIO -->
+        <!-- Se refleja en la parte derecha del header. -->
         <div class="iconos">
             <a href="registro.html" class="icono-usuario">
+                <!-- Lleva a la página de registro. -->
+
                 <img src="assets/images/person.png" alt="Ir al registro">
+                <!-- Imagen del icono de usuario. -->
             </a>
         </div>
 
     </header>
 
-    <!-- PAGINA RAMOS -->
+    <!-- ===================================================== -->
+    <!-- CONTENIDO PRINCIPAL DE ARMAR RAMO -->
+    <!-- ===================================================== -->
+    <!-- Este bloque contiene toda la página donde el usuario
+    puede elegir flores, colores, extras, datos de entrega
+    y ver el resumen del ramo. -->
+
     <main class="armar-ramo">
 
+        <!-- ===================================================== -->
         <!-- TÍTULO DE LA PÁGINA -->
+        <!-- ===================================================== -->
+        <!-- Se refleja en la parte superior del contenido principal. -->
+
         <section class="titulo-armar">
             <h2>Armar ramo</h2>
+            <!-- Título grande de la página. -->
+
             <p>Elige tus flores, colores y detalles para crear un ramo especial.</p>
+            <!-- Texto descriptivo debajo del título. -->
         </section>
 
+        <!-- ===================================================== -->
         <!-- CONTENEDOR PRINCIPAL -->
+        <!-- ===================================================== -->
+        <!-- Divide el contenido en dos partes:
+        lado izquierdo con opciones y lado derecho con resumen. -->
+
         <section class="contenedor-armar">
 
+            <!-- ===================================================== -->
             <!-- LADO IZQUIERDO: FLORES Y OPCIONES -->
+            <!-- ===================================================== -->
+            <!-- Aquí se muestran los filtros, flores, ocasión,
+            extras e información de entrega. -->
+
             <div class="zona-productos">
 
-                <!-- FILTROS -->
+                <!-- ===================================================== -->
                 <!-- SECCIÓN 1: ELEGIR FLORES -->
+                <!-- ===================================================== -->
+                <!-- Esta sección se refleja como el primer bloque donde
+                el usuario puede filtrar, buscar y seleccionar flores. -->
+
                 <div class="bloque-armar">
 
                     <div class="titulo-bloque">
                         <span>1</span>
+                        <!-- Número de la sección. -->
+
                         <h3>Elige tus flores</h3>
+                        <!-- Título de la primera sección. -->
                     </div>
 
+                    <!-- FILTROS Y BUSCADOR -->
+                    <!-- Se reflejan encima de las tarjetas de flores. -->
                     <div class="filtros-armar">
 
                         <div class="campo-filtro">
                             <label>Filtrar por tipo</label>
+                            <!-- Texto que indica que este filtro es por tipo de flor. -->
+
                             <select id="filtroTipo">
+                                <!-- JavaScript usa este id para filtrar por tipo. -->
+
                                 <option value="Todas">Todas</option>
+                                <!-- Muestra todas las flores. -->
+
                                 <option value="Rosa">Rosas</option>
+                                <!-- Filtra rosas. -->
+
                                 <option value="Tulipán">Tulipanes</option>
+                                <!-- Filtra tulipanes. -->
+
                                 <option value="Lirio">Lirios</option>
+                                <!-- Filtra lirios. -->
+
                                 <option value="Gerberas">Gerberas</option>
+                                <!-- Filtra gerberas. -->
+
                                 <option value="Hortensia">Hortensias</option>
+                                <!-- Filtra hortensias. -->
+
                                 <option value="Girasol">Girasoles</option>
+                                <!-- Filtra girasoles. -->
+
                                 <option value="Clavel">Claveles</option>
+                                <!-- Filtra claveles. -->
+
                                 <option value="Baby's Breath">Baby's Breath</option>
+                                <!-- Filtra Baby's Breath. -->
                             </select>
                         </div>
 
                         <div class="campo-filtro">
                             <label>Filtrar por color</label>
+                            <!-- Texto que indica que este filtro es por color. -->
+
                             <select id="filtroColor">
+                                <!-- JavaScript usa este id para filtrar por color. -->
+
                                 <option value="Todos">Todos</option>
+                                <!-- Muestra todos los colores. -->
+
                                 <option value="Rojo">Rojo</option>
+                                <!-- Filtra flores rojas. -->
+
                                 <option value="Rosado">Rosado</option>
+                                <!-- Filtra flores rosadas. -->
+
                                 <option value="Blanco">Blanco</option>
+                                <!-- Filtra flores blancas. -->
+
                                 <option value="Amarillo">Amarillo</option>
+                                <!-- Filtra flores amarillas. -->
+
                                 <option value="Naranja">Naranja</option>
+                                <!-- Filtra flores naranjas. -->
+
                                 <option value="Morado">Morado</option>
+                                <!-- Filtra flores moradas. -->
+
                                 <option value="Beige">Beige</option>
+                                <!-- Filtra flores beige. -->
+
                                 <option value="Celeste">Celeste</option>
+                                <!-- Filtra flores celestes. -->
                             </select>
                         </div>
 
                         <div class="campo-filtro">
                             <label>Buscar</label>
+                            <!-- Texto que indica que aquí se puede buscar. -->
+
                             <input type="text" id="buscarFlor" placeholder="Buscar por tipo o color">
+                            <!-- Campo de búsqueda.
+                            JavaScript lo usa para buscar flores por nombre o color. -->
                         </div>
 
                     </div>
-                    <!-- AQUÍ SE VAN A CARGAR LAS FLORES DESDE JSON -->
+
+                    <!-- CONTENEDOR DE FLORES -->
+                    <!-- Aquí JavaScript carga las tarjetas de flores desde el JSON. -->
                     <div id="contenedorFlores" class="contenedor-flores">
-                        <!-- JavaScript va poner aquí las tarjetas -->
+                        <!-- JavaScript va a poner aquí las tarjetas de las flores. -->
                     </div>
 
+                    <!-- ===================================================== -->
                     <!-- SECCIÓN 2: OCASIÓN -->
+                    <!-- ===================================================== -->
+                    <!-- Se refleja debajo de las flores.
+                    Permite escoger la ocasión del ramo. -->
+
                     <div class="bloque-armar">
 
                         <div class="titulo-bloque">
                             <span>2</span>
+                            <!-- Número de la sección. -->
+
                             <h3>Ocasión</h3>
+                            <!-- Título visible de la sección. -->
                         </div>
 
                         <div class="campo-ocasion">
                             <label for="ocasion">Selecciona la ocasión de tu ramo</label>
+                            <!-- Texto encima del select de ocasión. -->
 
                             <select id="ocasion">
+                                <!-- Select para elegir la ocasión del ramo. -->
+
                                 <option value="">Selecciona una ocasión</option>
+                                <!-- Opción inicial. -->
+
                                 <option value="Cumpleaños">Cumpleaños</option>
+                                <!-- Opción cumpleaños. -->
+
                                 <option value="Aniversario">Aniversario</option>
+                                <!-- Opción aniversario. -->
+
                                 <option value="Graduación">Graduación</option>
+                                <!-- Opción graduación. -->
+
                                 <option value="Amor">Amor</option>
+                                <!-- Opción amor. -->
+
                                 <option value="Agradecimiento">Agradecimiento</option>
+                                <!-- Opción agradecimiento. -->
+
                                 <option value="Otro">Otro</option>
+                                <!-- Opción otro. -->
                             </select>
                         </div>
 
                     </div>
 
+                    <!-- ===================================================== -->
                     <!-- SECCIÓN 3: EXTRAS -->
+                    <!-- ===================================================== -->
+                    <!-- Se refleja debajo de la ocasión.
+                    Permite agregar tarjeta o chocolates al pedido. -->
+
                     <div class="bloque-armar">
 
                         <div class="titulo-bloque">
                             <span>3</span>
+                            <!-- Número de la sección. -->
+
                             <h3>Agrega extras (opcional)</h3>
+                            <!-- Título visible de extras. -->
                         </div>
 
                         <div class="contenedor-extras">
+                            <!-- Contenedor donde están las tarjetas de extras. -->
 
-                            <!-- Tarjeta -->
+                            <!-- TARJETA -->
+                            <!-- Extra que suma ₡1500 al resumen cuando se marca. -->
                             <div class="extra-card">
 
                                 <input type="checkbox" id="tarjeta">
+                                <!-- Checkbox que JavaScript usa para saber si se agregó tarjeta. -->
 
                                 <img src="assets/images/tarjeta.jpg" alt="Tarjeta">
+                                <!-- Imagen del extra tarjeta. -->
 
                                 <h4>Tarjeta</h4>
+                                <!-- Nombre visible del extra. -->
 
                                 <p>₡1500</p>
+                                <!-- Precio visible del extra. -->
 
                             </div>
 
-                            <!-- Chocolates -->
+                            <!-- CHOCOLATES -->
+                            <!-- Extra que suma ₡3000 al resumen cuando se marca. -->
                             <div class="extra-card">
 
                                 <input type="checkbox" id="chocolates">
+                                <!-- Checkbox que JavaScript usa para saber si se agregaron chocolates. -->
 
                                 <img src="assets/images/chocolate.jpg" alt="Chocolates">
+                                <!-- Imagen del extra chocolates. -->
 
                                 <h4>Chocolates</h4>
+                                <!-- Nombre visible del extra. -->
 
                                 <p>₡3000</p>
+                                <!-- Precio visible del extra. -->
 
                             </div>
 
                         </div>
 
-                        <!-- Mensaje -->
+                        <!-- MENSAJE PARA TARJETA -->
+                        <!-- Se refleja como una caja de texto para escribir un mensaje. -->
                         <div class="mensaje-tarjeta">
 
                             <label>Mensaje para la tarjeta (opcional)</label>
+                            <!-- Texto que indica para qué sirve el textarea. -->
 
-                            <textarea placeholder="Escribe tu mensaje aquí...">
-                            </textarea>
+                            <textarea placeholder="Escribe tu mensaje aquí..."></textarea>
+                            <!-- Caja donde el usuario puede escribir el mensaje. -->
                         </div>
                     </div>
 
+                    <!-- ===================================================== -->
                     <!-- SECCIÓN 4: INFORMACIÓN DE ENTREGA -->
+                    <!-- ===================================================== -->
+                    <!-- Se refleja debajo de extras.
+                    Permite ingresar datos para entregar el pedido. -->
+
                     <div class="bloque-armar">
 
                         <div class="titulo-bloque">
                             <span>4</span>
+                            <!-- Número de la sección. -->
+
                             <h3>Información de entrega</h3>
+                            <!-- Título visible de la sección de entrega. -->
                         </div>
 
                         <div class="form-entrega">
+                            <!-- Contenedor de todos los campos de entrega. -->
 
                             <div class="campo-entrega">
                                 <label>Tu nombre</label>
+                                <!-- Texto encima del campo de nombre. -->
+
                                 <input type="text" placeholder="Escribe tu nombre">
+                                <!-- Campo para escribir el nombre. -->
                             </div>
 
                             <div class="campo-entrega">
                                 <label>Teléfono</label>
+                                <!-- Texto encima del campo de teléfono. -->
+
                                 <input type="text" placeholder="Escribe tu teléfono">
+                                <!-- Campo para escribir el teléfono. -->
                             </div>
 
                             <div class="campo-entrega">
                                 <label>Fecha de entrega</label>
+                                <!-- Texto encima del campo de fecha. -->
+
                                 <input type="date">
+                                <!-- Campo tipo calendario para escoger fecha. -->
                             </div>
 
                             <div class="campo-entrega">
                                 <label>Dirección de entrega</label>
+                                <!-- Texto encima del campo de dirección. -->
+
                                 <input type="text" placeholder="Escribe la dirección completa">
+                                <!-- Campo para escribir dirección. -->
                             </div>
 
                         </div>
 
                         <button id="btnPagar" class="btn-pagar btn-pagar-entrega">
+                            <!-- Botón que JavaScript usa para revisar registro y realizar pago. -->
+
                             Pagar
+                            <!-- Texto visible del botón. -->
                         </button>
 
                     </div>
@@ -238,42 +434,73 @@
                 </div>
             </div>
 
-            <!-- LADO DERECHO: RESUMEN -->
+            <!-- ===================================================== -->
+            <!-- LADO DERECHO: RESUMEN DEL RAMO -->
+            <!-- ===================================================== -->
+            <!-- Se refleja en el lado derecho de la página.
+            Muestra flores seleccionadas, subtotal, extras,
+            entrega y total estimado. -->
+
             <aside class="resumen-ramo">
 
                 <h3>Resumen del ramo</h3>
+                <!-- Título del resumen. -->
 
-                <!-- Aquí JavaScript va agregar las flores -->
                 <div id="listaResumen">
+                    <!-- Aquí JavaScript coloca las flores seleccionadas. -->
 
                     <p class="mensaje-vacio">
+                        <!-- Mensaje inicial cuando no se han agregado flores. -->
+
                         Aún no has agregado flores.
                     </p>
 
                 </div>
 
                 <div class="linea-resumen"></div>
+                <!-- Línea decorativa para separar contenido. -->
 
                 <div class="fila-total">
+                    <!-- Fila donde se muestra el subtotal de flores. -->
+
                     <span>Subtotal flores</span>
+                    <!-- Texto de subtotal. -->
+
                     <strong id="subtotalFlores">₡0</strong>
+                    <!-- JavaScript actualiza aquí el subtotal de flores. -->
                 </div>
 
                 <div class="fila-total">
+                    <!-- Fila donde se muestra el total de extras. -->
+
                     <span>Extras</span>
+                    <!-- Texto de extras. -->
+
                     <strong id="totalExtras">₡0</strong>
+                    <!-- JavaScript actualiza aquí el total de extras. -->
                 </div>
 
                 <div class="fila-total">
+                    <!-- Fila donde se muestra el costo de entrega. -->
+
                     <span>Entrega</span>
+                    <!-- Texto de entrega. -->
+
                     <strong>₡2.500</strong>
+                    <!-- Costo fijo de entrega visible. -->
                 </div>
 
                 <div class="linea-resumen"></div>
+                <!-- Línea decorativa antes del total final. -->
 
                 <div class="total-final">
+                    <!-- Fila del total final. -->
+
                     <span>Total estimado</span>
+                    <!-- Texto del total. -->
+
                     <strong id="totalGeneral">₡0</strong>
+                    <!-- JavaScript actualiza aquí el total general. -->
                 </div>
 
             </aside>
@@ -281,44 +508,87 @@
         </section>
 
     </main>
+
     <!-- ===================================================== -->
     <!-- FOOTER -->
     <!-- ===================================================== -->
+    <!-- Este bloque se refleja en la parte inferior de la página.
+    Contiene información de contacto, enlaces rápidos y copyright. -->
 
     <footer class="footer">
 
         <!-- ===================================================== -->
         <!-- INFORMACIÓN DE CONTACTO -->
         <!-- ===================================================== -->
+        <!-- Se refleja en el footer.
+        Muestra dirección, teléfono, correo y horario. -->
+
         <div id="contacto" class="footer-contacto">
 
             <h3>Contacto</h3>
+            <!-- Título de la sección de contacto. -->
 
             <p>San José, Costa Rica</p>
+            <!-- Ubicación de la floristería. -->
+
             <p>+506 8888 8888</p>
+            <!-- Teléfono de contacto. -->
+
             <p>sakurafloristeri@gmail.com</p>
+            <!-- Correo de contacto. -->
+
             <p>Lunes a Sábado 9:00 a.m - 5:00 p.m</p>
+            <!-- Horario de atención. -->
         </div>
 
-        <!-- ENLACES -->
+        <!-- ===================================================== -->
+        <!-- ENLACES RÁPIDOS -->
+        <!-- ===================================================== -->
+        <!-- Se refleja en el footer como accesos directos
+        a otras páginas del sitio. -->
+
         <div class="footer-links">
 
             <h3>Enlaces rápidos</h3>
+            <!-- Título de los enlaces. -->
+
             <a href="index.html">Inicio</a>
+            <!-- Enlace a inicio. -->
+
             <a href="index.html#nosotros">Nosotros</a>
+            <!-- Enlace a Nosotros. -->
+
             <a href="ramos.html">Ramos</a>
+            <!-- Enlace a Ramos. -->
+
             <a href="ocasiones.html">Ocasiones</a>
+            <!-- Enlace a Ocasiones. -->
+
             <a href="detalles.html">Detalles</a>
+            <!-- Enlace a Detalles. -->
+
         </div>
 
-
+        <!-- ===================================================== -->
         <!-- COPYRIGHT -->
+        <!-- ===================================================== -->
+        <!-- Se refleja al final del footer. -->
+
         <p class="copy">
             © 2026 Sakura Floristería - Todos los derechos reservados
         </p>
+
     </footer>
 
+    <!-- ===================================================== -->
+    <!-- CONEXIÓN CON JAVASCRIPT -->
+    <!-- ===================================================== -->
+    <!-- Este script conecta la página HTML con armar_Ramo.js.
+    Gracias a esto se cargan las flores, filtros, resumen,
+    localStorage y botón pagar. -->
+
     <script src="js/armar_Ramo.js"></script>
+
 </body>
 
 </html>

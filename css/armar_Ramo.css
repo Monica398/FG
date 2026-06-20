@@ -1,593 +1,1332 @@
-/* =========================
+/*=====================================================
 PÁGINA ARMAR RAMO
-========================= */
+=====================================================*/
+/* Este bloque corresponde a toda la página Armar Ramo.
+Se refleja como el fondo general y el espaciado principal
+de toda la sección. */
 
 .armar-ramo {
+
+    /* Color beige claro de fondo de toda la página */
     background-color: #f5ead7;
+
+    /* Espacio interno alrededor de todo el contenido */
     padding: 40px 60px;
+
+    /* Fuente principal utilizada en la página */
     font-family: Arial, sans-serif;
 }
 
-/* Título */
+
+/*=====================================================
+TÍTULO PRINCIPAL DE LA PÁGINA
+=====================================================*/
+/* Este bloque se refleja en la parte superior de la página,
+donde aparece el título "Armar ramo". */
+
 .titulo-armar {
+
+    /* Centra horizontalmente el título y el texto */
     text-align: center;
+
+    /* Agrega espacio debajo del título */
     margin-bottom: 40px;
 }
 
 .titulo-armar h2 {
+
+    /* Color del título principal */
     color: #7f4f55;
+
+    /* Tamaño del texto */
     font-size: 42px;
+
+    /* Espacio debajo del título */
     margin-bottom: 10px;
 }
 
 .titulo-armar p {
+
+    /* Color del texto descriptivo */
     color: #5f5f5f;
+
+    /* Tamaño del texto */
     font-size: 16px;
 }
 
-/* Contenedor principal */
+
+/*=====================================================
+CONTENEDOR PRINCIPAL
+=====================================================*/
+/* Este bloque divide la página en dos partes:
+flores a la izquierda y resumen a la derecha. */
+
 .contenedor-armar {
+
+    /* Coloca los elementos uno al lado del otro */
     display: flex;
+
+    /* Espacio entre ambas columnas */
     gap: 30px;
+
+    /* Alinea ambos bloques desde arriba */
     align-items: flex-start;
 }
 
-/* Lado izquierdo */
+
+/*=====================================================
+LADO IZQUIERDO
+=====================================================*/
+/* Este bloque corresponde a toda la zona donde aparecen
+flores, filtros, extras e información de entrega. */
+
 .zona-productos {
+
+    /* Ocupa el 70% del ancho total */
     width: 70%;
 }
 
-/* Filtros y personalización */
+
+/*=====================================================
+FILTROS Y PERSONALIZACIÓN
+=====================================================*/
+/* Este bloque corresponde a los cuadros blancos donde
+se colocan filtros y opciones de personalización. */
+
 .filtros,
 .personalizar {
+
+    /* Color de fondo blanco crema */
     background-color: #fffaf4;
+
+    /* Espacio interno */
     padding: 20px;
+
+    /* Bordes redondeados */
     border-radius: 18px;
+
+    /* Espacio debajo del bloque */
     margin-bottom: 25px;
 }
 
 .filtros h3,
 .personalizar h3 {
+
+    /* Color de los títulos */
     color: #7f4f55;
+
+    /* Espacio debajo del título */
     margin-bottom: 15px;
 }
 
+
+/*=====================================================
+SELECT GENERALES
+=====================================================*/
+/* Este estilo se aplica a todos los select de la página. */
+
 select {
+
+    /* Ocupa todo el ancho disponible */
     width: 100%;
+
+    /* Espacio interno */
     padding: 12px;
+
+    /* Borde del select */
     border: 1px solid #d8b7a3;
+
+    /* Bordes redondeados */
     border-radius: 10px;
+
+    /* Fondo blanco */
     background-color: white;
 }
 
-/* Tarjetas de flores */
+
+/*=====================================================
+CONTENEDOR DE FLORES
+=====================================================*/
+/* Este bloque organiza las tarjetas de flores en forma
+de cuadrícula. Se refleja en la sección "Elige tus flores". */
+
 .contenedor-flores {
+
+    /* Activa Grid */
     display: grid;
+
+    /* Muestra 3 columnas */
     grid-template-columns: repeat(3, 1fr);
+
+    /* Espacio entre tarjetas */
     gap: 22px;
+
+    /* Espacio debajo del contenedor */
     margin-bottom: 25px;
 }
 
-/* Tarjeta más compacta */
+
+/*=====================================================
+TARJETA DE CADA FLOR
+=====================================================*/
+/* Este bloque corresponde a cada tarjeta individual
+de las flores. */
+
 .tarjeta-flor {
+
+    /* Fondo blanco */
     background-color: #fffaf4;
+
+    /* Borde suave */
     border: 1px solid #e0cfc2;
+
+    /* Bordes redondeados */
     border-radius: 12px;
+
+    /* Espacio interno */
     padding: 14px;
+
+    /* Centra todo el contenido */
     text-align: center;
+
+    /* Sin sombra */
     box-shadow: none;
 }
-/* Imagen de cada flor más pequeña */
+
+
+/*=====================================================
+IMAGEN DE LA FLOR
+=====================================================*/
+/* Se refleja en la imagen principal de cada tarjeta. */
+
 .tarjeta-flor img {
+
+    /* Ancho fijo */
     width: 120px;
+
+    /* Alto fijo */
     height: 120px;
+
+    /* Ajusta la imagen sin deformarla */
     object-fit: contain;
+
+    /* Bordes redondeados */
     border-radius: 12px;
+
+    /* Espacio inferior */
     margin-bottom: 12px;
 }
 
-/* Título más pequeño */
+
+/*=====================================================
+NOMBRE DE LA FLOR
+=====================================================*/
+
 .tarjeta-flor h4 {
+
+    /* Color del nombre */
     color: #003b2d;
+
+    /* Tamaño del texto */
     font-size: 16px;
+
+    /* Espacio inferior */
     margin-bottom: 6px;
 }
-/* Precio más pequeño */
+
+
+/*=====================================================
+PRECIO DE LA FLOR
+=====================================================*/
+
 .precio {
+
+    /* Color del precio */
     color: #003b2d;
+
+    /* Tamaño del texto */
     font-size: 13px;
+
+    /* Negrita */
     font-weight: bold;
+
+    /* Espacio inferior */
     margin-bottom: 12px;
 }
-/* Texto antes de los colores */
+
+
+/*=====================================================
+TEXTO "COLORES DISPONIBLES"
+=====================================================*/
+
 .texto-colores {
+
+    /* Tamaño del texto */
     font-size: 13px;
+
+    /* Color del texto */
     color: #003b2d;
+
+    /* Espacio inferior */
     margin-bottom: 8px;
 }
 
-/* Colores */
-.colores {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
-    margin-bottom: 15px;
-}
 
-/* Botones de colores como circulitos */
-.colores button {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: 1px solid #d8b7a3;
-    font-size: 0;
-    padding: 0;
-    cursor: pointer;
-}
+/*=====================================================
+DESCRIPCIÓN DE LA FLOR
+=====================================================*/
+/* Este texto aparece debajo del precio de cada flor. */
+
 .descripcion-flor {
+
+    /* Tamaño pequeño */
     font-size: 13px;
+
+    /* Color gris */
     color: #666;
+
+    /* Espacio inferior */
     margin-bottom: 10px;
+
+    /* Espaciado entre líneas */
     line-height: 18px;
 }
-/* =========================
-COLORES DE LAS FLORES
-========================= */
+/*=====================================================
+COLORES DISPONIBLES DE LAS FLORES
+=====================================================*/
+/* Este bloque asigna un color de fondo a cada botón
+de color que aparece dentro de las tarjetas de flores.
+Se refleja en los pequeños círculos de colores que
+el usuario puede seleccionar. */
 
 .color-Rojo {
+
+    /* Color rojo */
     background-color: #c91818;
 }
 
 .color-Rosado,
 .color-Rosa {
+
+    /* Color rosado */
     background-color: #f28ca8;
 }
 
 .color-Blanco {
+
+    /* Color blanco */
     background-color: #ffffff;
 }
 
 .color-Morado {
+
+    /* Color morado */
     background-color: #9b6bb3;
 }
 
 .color-Amarillo {
+
+    /* Color amarillo */
     background-color: #f5c542;
 }
 
 .color-Beige {
+
+    /* Color beige */
     background-color: #e8d6b8;
 }
 
 .color-Naranja {
+
+    /* Color naranja */
     background-color: #f28c28;
 }
 
 .color-Fucsia {
+
+    /* Color fucsia */
     background-color: #e83e8c;
 }
 
 .color-Celeste {
+
+    /* Color celeste */
     background-color: #7db7d9;
 }
-.colores button:hover {
-    transform: scale(1.1);
-}
 
-/* Caja de cantidad como en la maqueta */
-.cantidad {
-    width: 120px;
-    margin: 10px auto 0;
-    border: 1px solid #d8b7a3;
-    border-radius: 8px;
-    padding: 6px 10px;
 
+/*=====================================================
+CONTENEDOR DE BOTONES DE COLORES
+=====================================================*/
+/* Este bloque organiza los botones de colores dentro
+de cada tarjeta de flor. */
+
+.colores {
+
+    /* Coloca los botones uno al lado del otro */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+    /* Permite que bajen a otra fila si no caben */
+    flex-wrap: wrap;
+
+    /* Espacio entre botones */
+    gap: 8px;
+
+    /* Centra horizontalmente los botones */
+    justify-content: center;
+
+    /* Espacio debajo del contenedor */
+    margin-bottom: 15px;
 }
 
-.cantidad button {
-    background: none;
-    color: #003b2d;
-    border: none;
-    width: auto;
-    height: auto;
-    border-radius: 0;
-    font-size: 18px;
+
+/*=====================================================
+BOTONES DE COLORES
+=====================================================*/
+/* Este bloque corresponde a los pequeños círculos de
+colores que aparecen debajo de cada flor. */
+
+.colores button {
+
+    /* Ancho del botón */
+    width: 22px;
+
+    /* Alto del botón */
+    height: 22px;
+
+    /* Convierte el botón en un círculo */
+    border-radius: 50%;
+
+    /* Borde del botón */
+    border: 1px solid #d8b7a3;
+
+    /* Oculta el texto interno */
+    font-size: 0;
+
+    /* Elimina espacios internos */
+    padding: 0;
+
+    /* Cambia el cursor a mano */
     cursor: pointer;
 }
 
-/* Resumen */
+
+/*=====================================================
+EFECTO HOVER DE LOS BOTONES DE COLOR
+=====================================================*/
+/* Este efecto hace que el botón aumente ligeramente
+de tamaño cuando el usuario pasa el mouse encima. */
+
+.colores button:hover {
+
+    /* Agranda ligeramente el botón */
+    transform: scale(1.1);
+}
+
+
+/*=====================================================
+CAJA DE CANTIDAD
+=====================================================*/
+/* Este bloque corresponde a la caja donde aparecen
+los botones + y - para agregar o quitar flores. */
+
+.cantidad {
+
+    /* Ancho de la caja */
+    width: 120px;
+
+    /* Centra la caja horizontalmente */
+    margin: 10px auto 0;
+
+    /* Borde de la caja */
+    border: 1px solid #d8b7a3;
+
+    /* Bordes redondeados */
+    border-radius: 8px;
+
+    /* Espacio interno */
+    padding: 6px 10px;
+
+    /* Coloca los elementos en fila */
+    display: flex;
+
+    /* Separa los elementos */
+    justify-content: space-between;
+
+    /* Centra verticalmente */
+    align-items: center;
+}
+
+
+/*=====================================================
+BOTONES DE CANTIDAD
+=====================================================*/
+/* Este bloque corresponde a los botones + y -
+que aparecen dentro de la caja de cantidad. */
+
+.cantidad button {
+
+    /* Sin color de fondo */
+    background: none;
+
+    /* Color del texto */
+    color: #003b2d;
+
+    /* Sin borde */
+    border: none;
+
+    /* Tamaño automático */
+    width: auto;
+    height: auto;
+
+    /* Sin bordes redondeados */
+    border-radius: 0;
+
+    /* Tamaño del símbolo + y - */
+    font-size: 18px;
+
+    /* Cursor de mano */
+    cursor: pointer;
+}
+
+
+/*=====================================================
+RESUMEN DEL RAMO
+=====================================================*/
+/* Este bloque corresponde al cuadro que aparece al lado
+derecho de la página y muestra el resumen del pedido. */
+
 .resumen-ramo {
+
+    /* Ocupa el 30% del ancho */
     width: 30%;
+
+    /* Fondo blanco */
     background-color: #fffaf4;
+
+    /* Espacio interno */
     padding: 25px;
+
+    /* Bordes redondeados */
     border-radius: 22px;
+
+    /* Mantiene el resumen visible al hacer scroll */
     position: sticky;
+
+    /* Distancia desde arriba */
     top: 20px;
+
+    /* Sombra suave */
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
+
+/*=====================================================
+TÍTULO DEL RESUMEN
+=====================================================*/
+
 .resumen-ramo h3 {
+
+    /* Color del título */
     color: #7f4f55;
+
+    /* Espacio debajo del título */
     margin-bottom: 20px;
 }
+
+
+/*=====================================================
+LISTA DEL RESUMEN
+=====================================================*/
+/* Aquí JavaScript coloca las flores seleccionadas. */
 
 #listaResumen {
+
+    /* Color del texto */
     color: #444;
+
+    /* Espacio inferior */
     margin-bottom: 20px;
 }
 
+
+/*=====================================================
+TOTAL DEL RESUMEN
+=====================================================*/
+/* Este bloque muestra subtotal, extras y total final. */
+
 .total {
+
+    /* Línea superior */
     border-top: 1px solid #d8b7a3;
+
+    /* Espacio interno superior */
     padding-top: 15px;
+
+    /* Coloca texto y precio en extremos opuestos */
     display: flex;
+
     justify-content: space-between;
+
+    /* Tamaño del texto */
     font-size: 18px;
 }
 
 .total strong {
+
+    /* Color del precio */
     color: #3f5f4b;
 }
 
-/* Botón pagar */
+
+/*=====================================================
+BOTÓN PAGAR
+=====================================================*/
+/* Este bloque corresponde al botón Pagar que aparece
+debajo de la información de entrega. */
+
 .btn-pagar {
+
+    /* Ocupa todo el ancho disponible */
     width: 100%;
+
+    /* Espacio superior */
     margin-top: 20px;
+
+    /* Espacio interno */
     padding: 14px;
+
+    /* Sin borde */
     border: none;
+
+    /* Bordes redondeados */
     border-radius: 25px;
+
+    /* Color de fondo */
     background-color: #7f4f55;
+
+    /* Color del texto */
     color: white;
+
+    /* Tamaño del texto */
     font-size: 16px;
+
+    /* Cursor de mano */
     cursor: pointer;
 }
 
+
+/*=====================================================
+HOVER DEL BOTÓN PAGAR
+=====================================================*/
+/* Cambia el color del botón cuando el usuario pasa
+el mouse encima. */
+
 .btn-pagar:hover {
+
+    /* Nuevo color de fondo */
     background-color: #6c4248;
 }
-/* =========================
+/*=====================================================
 BLOQUE: ELIGE TUS FLORES
-========================= */
+=====================================================*/
+/* Este bloque corresponde al cuadro blanco donde se
+encuentran el título "Elige tus flores", los filtros
+y posteriormente las tarjetas de flores. */
 
-/* Cuadro blanco donde van el título y los filtros */
 .bloque-armar {
+
+    /* Color de fondo del bloque */
     background-color: #fffaf4;
+
+    /* Espacio interno */
     padding: 24px;
+
+    /* Bordes redondeados */
     border-radius: 18px;
+
+    /* Espacio debajo del bloque */
     margin-bottom: 25px;
 }
 
-/* Acomoda el número 1 y el texto "Elige tus flores" en una fila */
+
+/*=====================================================
+TÍTULO DEL BLOQUE
+=====================================================*/
+/* Este bloque organiza el número y el título de cada
+sección (Ej: 1 Elige tus flores, 2 Ocasión, etc.) */
+
 .titulo-bloque {
+
+    /* Coloca el número y el título en fila */
     display: flex;
+
+    /* Centra verticalmente ambos elementos */
     align-items: center;
+
+    /* Espacio entre el círculo y el texto */
     gap: 15px;
+
+    /* Espacio debajo del título */
     margin-bottom: 20px;
 }
 
-/* Círculo verde donde va el número */
+
+/*=====================================================
+CÍRCULO DEL NÚMERO
+=====================================================*/
+/* Este círculo muestra el número de cada sección.
+Se refleja al lado izquierdo del título. */
+
 .titulo-bloque span {
-    /* Color de fondo */
+
+    /* Color de fondo del círculo */
     background-color: #003b2d;
+
     /* Color del número */
     color: #f5ead7;
-    /* Ancho y alto iguales para que quede redondo */
+
+    /* Ancho del círculo */
     width: 38px;
+
+    /* Alto del círculo */
     height: 38px;
+
     /* Convierte el cuadrado en círculo */
     border-radius: 50%;
-    /* Centra el número */
+
+    /* Activa Flexbox */
     display: flex;
+
+    /* Centra verticalmente */
     align-items: center;
+
+    /* Centra horizontalmente */
     justify-content: center;
+
+    /* Coloca el número en negrita */
+    font-weight: bold;
+}
+
+
+/*=====================================================
+TÍTULO DE CADA BLOQUE
+=====================================================*/
+/* Este estilo se refleja en textos como:
+"Elige tus flores", "Ocasión", etc. */
+
+.titulo-bloque h3 {
+
+    /* Color del texto */
+    color: #003b2d;
+
+    /* Tamaño del texto */
+    font-size: 24px;
+}
+
+
+/*=====================================================
+CONTENEDOR DE FILTROS
+=====================================================*/
+/* Organiza los filtros y el buscador uno al lado del otro. */
+
+.filtros-armar {
+
+    /* Coloca los filtros en fila */
+    display: flex;
+
+    /* Alinea todos desde abajo */
+    align-items: end;
+
+    /* Espacio entre filtros */
+    gap: 25px;
+
+    /* Permite que bajen de línea si no caben */
+    flex-wrap: wrap;
+}
+
+
+/*=====================================================
+CAMPO DE FILTRO
+=====================================================*/
+/* Este bloque corresponde a cada filtro individual
+(tipo, color y buscador). */
+
+.campo-filtro {
+
+    /* Coloca label e input en columna */
+    display: flex;
+
+    flex-direction: column;
+
+    /* Espacio entre el texto y el control */
+    gap: 8px;
+}
+
+
+/*=====================================================
+LABEL DE LOS FILTROS
+=====================================================*/
+/* Texto que aparece sobre cada filtro. */
+
+.campo-filtro label {
+
+    /* Color del texto */
+    color: #003b2d;
+
     /* Negrita */
     font-weight: bold;
 }
 
-/* Texto "Elige tus flores" */
-.titulo-bloque h3 {
-    color: #003b2d;
-    font-size: 24px;
-}
 
-/* Acomoda los filtros uno al lado del otro */
-.filtros-armar {
-    display: flex;
-    align-items: end;
-    gap: 25px;
-    flex-wrap: wrap;
-}
+/*=====================================================
+SELECT DE LOS FILTROS
+=====================================================*/
+/* Caja desplegable de tipo y color. */
 
-/* Cada filtro tiene su texto arriba y su select abajo */
-.campo-filtro {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-/* Texto del filtro */
-.campo-filtro label {
-    color: #003b2d;
-    font-weight: bold;
-}
-
-/* Cajita del select */
 .campo-filtro select {
+
+    /* Ancho fijo */
     width: 230px;
+
+    /* Espacio interno */
     padding: 12px;
+
+    /* Borde */
     border: 1px solid #d8b7a3;
+
+    /* Bordes redondeados */
     border-radius: 10px;
+
+    /* Fondo blanco */
     background-color: white;
 }
 
-/* Botón de limpiar filtros */
+
+/*=====================================================
+CAMPO DE BÚSQUEDA
+=====================================================*/
+/* Este campo se refleja en el buscador de flores. */
+
+.campo-filtro input {
+
+    /* Ancho del buscador */
+    width: 230px;
+
+    /* Espacio interno */
+    padding: 12px;
+
+    /* Borde */
+    border: 1px solid #d8b7a3;
+
+    /* Bordes redondeados */
+    border-radius: 10px;
+
+    /* Fondo blanco */
+    background-color: white;
+}
+
+
+/*=====================================================
+BOTÓN LIMPIAR FILTROS
+=====================================================*/
+/* Este botón sirve para limpiar los filtros.
+Actualmente no se está utilizando. */
+
 .btn-limpiar {
+
+    /* Espacio interno */
     padding: 13px 25px;
+
+    /* Borde */
     border: 2px solid #d3968c;
+
+    /* Fondo transparente */
     background-color: transparent;
+
+    /* Color del texto */
     color: #d3968c;
+
+    /* Bordes redondeados */
     border-radius: 8px;
+
+    /* Texto en negrita */
     font-weight: bold;
+
+    /* Cursor tipo mano */
     cursor: pointer;
 }
 
-/* Cambia el color cuando se pasa el mouse encima */
+
+/*=====================================================
+HOVER DEL BOTÓN LIMPIAR
+=====================================================*/
+
 .btn-limpiar:hover {
+
+    /* Cambia el fondo */
     background-color: #d3968c;
+
+    /* Cambia el texto a blanco */
     color: white;
 }
-/* =========================
+
+
+/*=====================================================
 BLOQUE: OCASIÓN
-========================= */
+=====================================================*/
+/* Este bloque corresponde al select donde el usuario
+elige la ocasión del ramo. */
 
 .campo-ocasion {
+
+    /* Organiza los elementos en columna */
     display: flex;
+
     flex-direction: column;
+
+    /* Espacio entre elementos */
     gap: 8px;
 }
 
+
+/* Texto "Selecciona la ocasión..." */
+
 .campo-ocasion label {
+
+    /* Color del texto */
     color: #003b2d;
+
+    /* Negrita */
     font-weight: bold;
+
+    /* Tamaño del texto */
     font-size: 14px;
 }
 
+
+/* Select de ocasión */
+
 .campo-ocasion select {
+
+    /* Ancho del select */
     width: 360px;
+
+    /* Espacio interno */
     padding: 12px;
+
+    /* Borde */
     border: 1px solid #d8b7a3;
+
+    /* Bordes redondeados */
     border-radius: 10px;
+
+    /* Fondo */
     background-color: white;
+
+    /* Color del texto */
     color: #333;
 }
-/* =========================
+
+
+/*=====================================================
 BLOQUE: TARJETA Y CHOCOLATES
-========================= */
+=====================================================*/
+/* Este bloque corresponde a las tarjetas de extras
+que aparecen debajo de la sección Ocasión. */
 
 .contenedor-extras {
+
+    /* Coloca los extras en fila */
     display: flex;
+
+    /* Espacio entre tarjetas */
     gap: 20px;
+
+    /* Espacio inferior */
     margin-bottom: 20px;
 }
 
+
+/* Tarjeta individual de cada extra */
+
 .extra-card {
+
+    /* Ancho */
     width: 220px;
+
+    /* Borde */
     border: 1px solid #e0cfc2;
+
+    /* Bordes redondeados */
     border-radius: 12px;
+
+    /* Espacio interno */
     padding: 15px;
+
+    /* Fondo */
     background-color: white;
 }
 
+
+/* Imagen del extra */
+
 .extra-card img {
+
+    /* Ancho */
     width: 90px;
+
+    /* Alto */
     height: 90px;
+
+    /* Ajusta la imagen */
     object-fit: contain;
+
+    /* Convierte la imagen en bloque */
     display: block;
+
+    /* Centra la imagen */
     margin: 0 auto 10px;
 }
 
+
+/* Nombre del extra */
+
 .extra-card h4 {
+
     color: #003b2d;
+
     margin-bottom: 5px;
 }
 
+
+/* Precio del extra */
+
 .extra-card p {
+
     color: #7f4f55;
+
     font-weight: bold;
 }
+/*=====================================================
+MENSAJE PARA TARJETA
+=====================================================*/
+/* Este bloque corresponde al espacio donde el usuario
+puede escribir un mensaje para la tarjeta. */
 
 .mensaje-tarjeta {
+
+    /* Organiza el label y el textarea en columna */
     display: flex;
+
+    /* Coloca los elementos uno debajo del otro */
     flex-direction: column;
+
+    /* Espacio entre el texto y la caja */
     gap: 8px;
 }
 
 .mensaje-tarjeta label {
+
+    /* Color del texto */
     color: #003b2d;
+
+    /* Texto en negrita */
     font-weight: bold;
 }
 
 .mensaje-tarjeta textarea {
+
+    /* Altura de la caja de mensaje */
     height: 100px;
+
+    /* Evita que el usuario cambie el tamaño */
     resize: none;
+
+    /* Espacio interno */
     padding: 12px;
+
+    /* Borde */
     border: 1px solid #d8b7a3;
+
+    /* Bordes redondeados */
     border-radius: 10px;
 }
 
-/* =========================
+
+/*=====================================================
 BLOQUE: INFORMACIÓN DE ENTREGA
-========================= */
+=====================================================*/
+/* Este bloque corresponde al formulario donde el usuario
+escribe nombre, teléfono, fecha y dirección de entrega. */
 
 .form-entrega {
+
+    /* Organiza los campos en cuadrícula */
     display: grid;
+
+    /* Hace dos columnas iguales */
     grid-template-columns: repeat(2, 1fr);
+
+    /* Espacio entre filas y columnas */
     gap: 18px 35px;
 }
 
 .campo-entrega {
+
+    /* Coloca label e input en columna */
     display: flex;
+
+    /* Elementos uno debajo del otro */
     flex-direction: column;
+
+    /* Espacio entre label e input */
     gap: 8px;
 }
 
 .campo-entrega label {
+
+    /* Color del texto */
     color: #003b2d;
+
+    /* Texto en negrita */
     font-weight: bold;
 }
 
 .campo-entrega input {
+
+    /* Espacio interno */
     padding: 12px;
+
+    /* Borde */
     border: 1px solid #d8b7a3;
+
+    /* Bordes redondeados */
     border-radius: 10px;
+
+    /* Fondo blanco */
     background-color: white;
 }
 
+
+/*=====================================================
+BOTÓN PAGAR DE ENTREGA
+=====================================================*/
+/* Este estilo modifica específicamente el botón Pagar
+que aparece debajo de la información de entrega. */
+
 .btn-pagar-entrega {
+
+    /* Espacio superior */
     margin-top: 22px;
+
+    /* Bordes menos redondos que el botón general */
     border-radius: 8px;
+
+    /* Color rosado del botón */
     background-color: #d3968c;
 }
 
 .btn-pagar-entrega:hover {
+
+    /* Color más oscuro al pasar el mouse */
     background-color: #c77f75;
 }
-/* =========================
-RESUMEN DEL RAMO
-========================= */
 
-/* Mensaje cuando todavía no hay flores */
+
+/*=====================================================
+RESUMEN DEL RAMO
+=====================================================*/
+/* Este bloque corresponde a los elementos internos
+del resumen que aparece en el lado derecho. */
+
 .mensaje-vacio {
+
+    /* Color gris del mensaje inicial */
     color: #666;
+
+    /* Espacio arriba y abajo */
     margin: 20px 0;
 }
 
-/* Línea separadora */
 .linea-resumen {
+
+    /* Línea separadora */
     border-top: 1px solid #d8b7a3;
+
+    /* Espacio arriba y abajo de la línea */
     margin: 18px 0;
 }
 
-/* Filas de subtotal, extras y entrega */
 .fila-total {
+
+    /* Coloca texto y precio en una misma fila */
     display: flex;
+
+    /* Separa texto a la izquierda y precio a la derecha */
     justify-content: space-between;
+
+    /* Espacio debajo de cada fila */
     margin-bottom: 14px;
 }
 
-/* Total final */
 .total-final {
+
+    /* Coloca texto y total final en fila */
     display: flex;
+
+    /* Separa ambos extremos */
     justify-content: space-between;
+
+    /* Centra verticalmente */
     align-items: center;
 }
 
 .total-final span {
+
+    /* Texto en negrita */
     font-weight: bold;
+
+    /* Color verde */
     color: #003b2d;
 }
 
 .total-final strong {
+
+    /* Color rosado del total */
     color: #d3968c;
+
+    /* Tamaño grande para destacar el total */
     font-size: 28px;
 }
-/* =========================
+/*=====================================================
 MEDIA QUERY TABLET
-========================= */
+=====================================================*/
+/* Estos estilos se aplican cuando la pantalla tiene
+un ancho máximo de 900px. Se refleja en tablets
+o pantallas más pequeñas. */
+
 @media (max-width: 900px) {
 
     .armar-ramo {
+        /* Reduce el espacio interno de la página */
         padding: 40px 35px;
     }
 
     .contenedor-armar {
+        /* Coloca el contenido uno debajo del otro */
         flex-direction: column;
     }
 
     .zona-productos,
     .resumen-ramo {
+        /* Ambos bloques ocupan todo el ancho */
         width: 100%;
     }
 
     .resumen-ramo {
+        /* Quita el efecto sticky en pantallas pequeñas */
         position: static;
     }
 
     .contenedor-flores {
+        /* Muestra las flores en 2 columnas */
         grid-template-columns: repeat(2, 1fr);
     }
 
     .campo-ocasion select {
+        /* El select de ocasión ocupa todo el ancho */
         width: 100%;
     }
 }
 
-/* =========================
+
+/*=====================================================
 MEDIA QUERY MÓVIL
-========================= */
+=====================================================*/
+/* Estos estilos se aplican cuando la pantalla tiene
+un ancho máximo de 700px. Se refleja en celulares. */
+
 @media (max-width: 700px) {
 
     .armar-ramo {
+        /* Reduce el espacio interno en celular */
         padding: 40px 25px;
     }
 
     .titulo-armar h2 {
+        /* Reduce el tamaño del título */
         font-size: 34px;
     }
 
     .contenedor-flores {
+        /* Muestra una flor por fila */
         grid-template-columns: 1fr;
     }
 
     .filtros-armar {
+        /* Coloca los filtros uno debajo del otro */
         flex-direction: column;
+
+        /* Hace que ocupen el ancho completo */
         align-items: stretch;
     }
 
     .campo-filtro select,
+    .campo-filtro input,
     .campo-ocasion select {
+        /* Filtros, buscador y ocasión ocupan todo el ancho */
         width: 100%;
     }
 
     .contenedor-extras {
+        /* Coloca los extras uno debajo del otro */
         flex-direction: column;
     }
 
     .extra-card {
+        /* Cada extra ocupa todo el ancho */
         width: 100%;
     }
 
     .form-entrega {
+        /* El formulario queda en una sola columna */
         grid-template-columns: 1fr;
     }
 }
 
-/* =========================
+
+/*=====================================================
 MEDIA QUERY MÓVIL PEQUEÑO
-========================= */
+=====================================================*/
+/* Estos estilos se aplican en celulares muy pequeños,
+con un ancho máximo de 420px. */
+
 @media (max-width: 420px) {
 
     .armar-ramo {
+        /* Reduce todavía más el espacio interno */
         padding: 30px 18px;
     }
 
     .titulo-armar h2 {
+        /* Reduce el título principal */
         font-size: 28px;
     }
 
     .titulo-bloque h3 {
+        /* Reduce los títulos de cada bloque */
         font-size: 20px;
     }
 
     .tarjeta-flor img {
+        /* Reduce las imágenes de las flores */
         width: 100px;
         height: 100px;
     }
 
     .total-final strong {
+        /* Reduce el tamaño del total final */
         font-size: 24px;
     }
 }
