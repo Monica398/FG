@@ -26,6 +26,10 @@ const checkChocolates = document.getElementById("chocolates");
 //Traemos el boton de pagar
 const btnPagar = document.getElementById("btnPagar");
 
+//Buscador
+const buscarFlor = document.getElementById("buscarFlor");
+buscarFlor.addEventListener("input", mostrarFlores);
+
 // Cuando el usuario marca o desmarca tarjeta, se actualiza el resumen
 checkTarjeta.addEventListener("change", actualizarResumen);
 
@@ -56,6 +60,28 @@ function mostrarFlores() {
 
     // Recorremos todas las flores
     for (const flor of flores) {
+
+        // Buscar por nombre o color
+        if (buscarFlor.value !== "") {
+
+            let texto = buscarFlor.value.toLowerCase();
+
+            let coincideNombre =
+                flor.nombre.toLowerCase().includes(texto);
+
+            let coincideColor = false;
+
+            for (const color of flor.colores) {
+
+                if (color.toLowerCase().includes(texto)) {
+                    coincideColor = true;
+                }
+            }
+
+            if (!coincideNombre && !coincideColor) {
+                continue;
+            }
+        }
 
         // Si el filtro de tipo no está en "Todas"
         // y la flor no coincide con el filtro, se salta esa flor
