@@ -23,12 +23,16 @@ const totalExtrasTexto = document.getElementById("totalExtras");
 // Traemos los checkbox de los extras
 const checkTarjeta = document.getElementById("tarjeta");
 const checkChocolates = document.getElementById("chocolates");
+//Traemos el boton de pagar
+const btnPagar = document.getElementById("btnPagar");
 
 // Cuando el usuario marca o desmarca tarjeta, se actualiza el resumen
 checkTarjeta.addEventListener("change", actualizarResumen);
 
 // Cuando el usuario marca o desmarca chocolates, se actualiza el resumen
 checkChocolates.addEventListener("change", actualizarResumen);
+//Boton de pagar 
+btnPagar.addEventListener("click", pagar);
 
 // Traemos los filtros del HTML
 const filtroTipo = document.getElementById("filtroTipo");
@@ -259,8 +263,63 @@ function actualizarResumen() {
 
     // Mostramos el total general: flores + extras + entrega
     totalGeneral.innerHTML = "₡" + (subtotal + totalExtras + costoEntrega);
+    //Mostrar el ramo que se estaba haciendo
+    guardarRamoPendiente();
 }
+function guardarRamoPendiente() {
 
+    const ramoPendiente = {
+        flores: flores,
+        tarjeta: checkTarjeta.checked,
+        chocolates: checkChocolates.checked
+    };
+
+    localStorage.setItem("ramoPendiente", JSON.stringify(ramoPendiente));
+}
+function pagar() {
+
+    const usuarioActivo = localStorage.getItem("usuarioActivo");
+
+    if (usuarioActivo === null) {
+
+        localStorage.setItem("volverArmarRamo", "si");
+
+        alert("Primero debes registrarte para realizar el pago.");
+
+        window.location.href = "registro.html";
+
+    } else {
+
+        alert("Pago realizado correctamente. ¡Gracias por tu compra!");
+
+        localStorage.removeItem("ramoPendiente");
+
+        const datosRamo = localStorage.getItem("ramoPendiente");
+
+        if (datosRamo !== null) {
+
+            const ramoPendiente = JSON.parse(datosRamo);
+
+            flores = ramoPendiente.flores;
+
+            checkTarjeta.checked = ramoPendiente.tarjeta;
+            checkChocolates.checked = ramoPendiente.chocolates;
+
+        } else {
+
+            for (const flor of flores) {
+                flor.cantidad = 0;
+                flor.colorSeleccionado = "";
+            }
+        }
+
+        checkTarjeta.checked = false;
+        checkChocolates.checked = false;
+
+        mostrarFlores();
+        actualizarResumen();
+    }
+}
 
 // Esta parte carga las flores desde el archivo JSON
 // Esto es lo único más nuevo, porque sirve para leer el archivo flores.json
@@ -282,4 +341,6 @@ fetch("data/flores.json")
 
         // Mostramos el resumen inicial
         actualizarResumen();
+
     });
+

@@ -74,10 +74,22 @@ document.addEventListener("DOMContentLoaded", function () {
         mensajeError.style.borderColor = "#c3e6cb";
 
         formulario.reset();
+/*================================================================
+ESTA PARTE ES LA QUE HACE QUE DE REGISTRO SE DEVUELVA A ARMAR AMO
+==================================================================*/
 
-       /* setTimeout(function () {
-            window.location.href = "index.html";
-        }, 2000);*/
+        setTimeout(function () {
+
+            const volverArmarRamo = localStorage.getItem("volverArmarRamo");
+
+            if (volverArmarRamo === "si") {
+                localStorage.removeItem("volverArmarRamo");
+                window.location.href = "armar_Ramo.html";
+            } else {
+                window.location.href = "index.html";
+            }
+
+        }, 2000);
     }
 
 }); // fin DOMContentLoaded
