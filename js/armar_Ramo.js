@@ -476,6 +476,7 @@ function pagar() {
     =====================================================*/
     alert("Pago realizado correctamente. ¡Gracias por tu compra!");
 
+    localStorage.removeItem("usuarioActivo");
     localStorage.removeItem("ramoPendiente");
 
     for (const flor of flores) {
