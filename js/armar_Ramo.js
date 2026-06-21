@@ -434,8 +434,12 @@ manda al usuario a registrarse. */
 
 function pagar() {
 
+        alert("Sí entró a pagar");
+
     // Revisamos si existe un usuario activo en localStorage.
     const usuarioActivo = localStorage.getItem("usuarioActivo");
+
+        alert(usuarioActivo);
 
     let hayFlores = false;
 
