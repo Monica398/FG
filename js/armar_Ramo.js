@@ -434,13 +434,9 @@ manda al usuario a registrarse. */
 
 function pagar() {
 
-        alert("Sí entró a pagar");
-
-    // Revisamos si existe un usuario activo en localStorage.
-    const usuarioActivo = localStorage.getItem("usuarioActivo");
-
-        alert(usuarioActivo);
-
+    /*=====================================================
+    VALIDAR QUE HAYA FLORES
+    =====================================================*/
     let hayFlores = false;
 
     for (const flor of flores) {
@@ -454,42 +450,44 @@ function pagar() {
         return;
     }
 
-    // Si no hay usuario activo, significa que no se ha registrado.
-    if (usuarioActivo === null) {
+    /*=====================================================
+    GUARDAR RAMO ANTES DE CAMBIAR DE PÁGINA
+    =====================================================*/
+    guardarRamoPendiente();
 
-        // Guardamos una señal para saber que debe volver a Armar Ramo.
+    /*=====================================================
+    VALIDAR SI HAY USUARIO REGISTRADO
+    =====================================================*/
+    const usuarioActivo = localStorage.getItem("usuarioActivo");
+
+    if (usuarioActivo === null || usuarioActivo === "") {
+
         localStorage.setItem("volverArmarRamo", "si");
 
-        // Mostramos una alerta al usuario.
         alert("Primero debes registrarte para realizar el pago.");
 
-        // Mandamos al usuario a la página de registro.
         window.location.href = "registro.html";
 
-    } else {
-
-        // Si ya hay usuario registrado, se muestra el pago realizado.
-        alert("Pago realizado correctamente. ¡Gracias por tu compra!");
-
-        // Eliminamos el ramo pendiente porque ya se pagó.
-        localStorage.removeItem("ramoPendiente");
-
-        // Reiniciamos las cantidades y colores de todas las flores.
-        for (const flor of flores) {
-            flor.cantidad = 0;
-            flor.colorSeleccionado = "";
-        }
-
-        // Desmarcamos los extras.
-        checkTarjeta.checked = false;
-        checkChocolates.checked = false;
-
-        // Volvemos a mostrar las flores limpias.
-        mostrarFlores();
-
-        // Actualizamos el resumen para que vuelva a cero.
-        actualizarResumen();
+        return;
     }
+
+    /*=====================================================
+    SI SÍ HAY USUARIO, SE REALIZA EL PAGO
+    =====================================================*/
+    alert("Pago realizado correctamente. ¡Gracias por tu compra!");
+
+    localStorage.removeItem("ramoPendiente");
+
+    for (const flor of flores) {
+        flor.cantidad = 0;
+        flor.colorSeleccionado = "";
+    }
+
+    checkTarjeta.checked = false;
+    checkChocolates.checked = false;
+
+    mostrarFlores();
+    actualizarResumen();
 }
 /*=====================================================
 CARGAR FLORES DESDE JSON
