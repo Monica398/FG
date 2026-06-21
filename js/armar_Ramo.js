@@ -434,39 +434,21 @@ manda al usuario a registrarse. */
 
 function pagar() {
 
-    /*=====================================================
-VALIDAR QUE EXISTA AL MENOS UNA FLOR
-=====================================================*/
-    /* Este bloque revisa si el usuario agregó al menos
-    una flor al ramo antes de permitir el pago.
-    Se refleja mostrando una alerta si el ramo está vacío. */
+    // Revisamos si existe un usuario activo en localStorage.
+    const usuarioActivo = localStorage.getItem("usuarioActivo");
 
-    // Variable para saber si el usuario agregó flores
     let hayFlores = false;
 
-    // Recorremos todas las flores del arreglo
     for (const flor of flores) {
-
-        // Si encontramos una flor con cantidad mayor que cero
-        // significa que sí hay flores en el ramo
         if (flor.cantidad > 0) {
-
-            // Cambiamos la variable a verdadero
             hayFlores = true;
         }
     }
 
-    // Si no hay flores seleccionadas
     if (hayFlores === false) {
-
-        // Mostramos un mensaje al usuario
         alert("Debes agregar al menos una flor al ramo.");
-
-        // Detenemos la función para que no continúe el pago
         return;
     }
-
-   
 
     // Si no hay usuario activo, significa que no se ha registrado.
     if (usuarioActivo === null) {
