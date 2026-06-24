@@ -52,6 +52,12 @@ const buscarFlor = document.getElementById("buscarFlor");
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 const btnLimpiarFiltros = document.getElementById("btnLimpiarFiltros");
 
+const filtroTipo = document.getElementById("filtroTipo");
+//Obtiene el filtro por tipo de flor
+const filtroColor = document.getElementById("filtroColor");
+//obtiene el filtro por color
+
+
 
 
 
@@ -78,14 +84,9 @@ checkChocolates.addEventListener("change", actualizarResumen);
 btnPagar.addEventListener("click", pagar);
 // Cuando el usuario presiona el botón pagar,
 // se ejecuta la función pagar().
+
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 btnLimpiarFiltros.addEventListener("click", limpiarFiltros);
-
-const filtroTipo = document.getElementById("filtroTipo");
-// Obtiene el filtro por tipo de flor.
-
-const filtroColor = document.getElementById("filtroColor");
-// Obtiene el filtro por color.
 
 filtroTipo.addEventListener("change", mostrarFlores);
 // Cuando cambia el filtro de tipo,
