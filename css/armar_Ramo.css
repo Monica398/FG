@@ -857,6 +857,10 @@ Actualmente no se está utilizando. */
     cursor: pointer;
 }
 
+/*Para que quede alineado con los filtros y lo de busqueda*/
+.campo-filtro button {
+    width: 230px;
+}
 
 /*=====================================================
 HOVER DEL BOTÓN LIMPIAR

@@ -49,6 +49,13 @@ const btnPagar = document.getElementById("btnPagar");
 const buscarFlor = document.getElementById("buscarFlor");
 // Obtiene el campo de búsqueda para buscar flores por nombre o color.
 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+const btnLimpiarFiltros = document.getElementById("btnLimpiarFiltros");
+
+
+
+
+
 
 /*=====================================================
 EVENTOS
@@ -71,6 +78,8 @@ checkChocolates.addEventListener("change", actualizarResumen);
 btnPagar.addEventListener("click", pagar);
 // Cuando el usuario presiona el botón pagar,
 // se ejecuta la función pagar().
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+btnLimpiarFiltros.addEventListener("click", limpiarFiltros);
 
 const filtroTipo = document.getElementById("filtroTipo");
 // Obtiene el filtro por tipo de flor.
@@ -87,6 +96,13 @@ filtroColor.addEventListener("change", mostrarFlores);
 // se actualizan las flores mostradas.
 
 
+
+
+
+
+
+
+
 /*=====================================================
 COSTOS FIJOS
 =====================================================*/
@@ -95,6 +111,29 @@ COSTOS FIJOS
 const costoEntrega = 2500;
 // Costo fijo de entrega.
 // Se refleja en el resumen del ramo.
+
+
+
+
+
+
+/*=====================================================
+FUNCIÓN LIMPIAR FILTROS
+=====================================================*/
+
+function limpiarFiltros() {
+
+    filtroTipo.value = "Todas";
+    filtroColor.value = "Todos";
+    buscarFlor.value = "";
+
+    mostrarFlores();
+}
+
+
+
+
+
 
 /*=====================================================
 FUNCIÓN MOSTRAR FLORES
@@ -217,6 +256,11 @@ function mostrarFlores() {
     // Esto hace que las flores aparezcan en la página.
     contenedorFlores.innerHTML = contenido;
 }
+
+
+
+
+
 /*=====================================================
 FUNCIÓN SUMAR CANTIDAD
 =====================================================*/
@@ -244,6 +288,10 @@ function sumarCantidad(id) {
     // Actualizamos el resumen del ramo.
     actualizarResumen();
 }
+
+
+
+
 
 
 /*=====================================================
@@ -276,6 +324,11 @@ function restarCantidad(id) {
 }
 
 
+
+
+
+
+
 /*=====================================================
 FUNCIÓN SELECCIONAR COLOR
 =====================================================*/
@@ -304,6 +357,12 @@ function seleccionarColor(id, color) {
     // el color elegido.
     actualizarResumen();
 }
+
+
+
+
+
+
 /*=====================================================
 FUNCIÓN ACTUALIZAR RESUMEN
 =====================================================*/
@@ -398,6 +457,12 @@ function actualizarResumen() {
     // para que no se pierda si el usuario cambia de página.
     guardarRamoPendiente();
 }
+
+
+
+
+
+
 /*=====================================================
 FUNCIÓN GUARDAR RAMO PENDIENTE
 =====================================================*/
@@ -423,6 +488,12 @@ function guardarRamoPendiente() {
     // Convertimos el objeto a texto JSON y lo guardamos en localStorage.
     localStorage.setItem("ramoPendiente", JSON.stringify(ramoPendiente));
 }
+
+
+
+
+
+
 
 
 /*=====================================================
@@ -490,6 +561,14 @@ function pagar() {
     mostrarFlores();
     actualizarResumen();
 }
+
+
+
+
+
+
+
+
 /*=====================================================
 CARGAR FLORES DESDE JSON
 =====================================================*/
