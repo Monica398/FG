@@ -1114,31 +1114,6 @@ escribe nombre, teléfono, fecha y dirección de entrega. */
 
 
 /*=====================================================
-BOTÓN PAGAR DE ENTREGA
-=====================================================*/
-/* Este estilo modifica específicamente el botón Pagar
-que aparece debajo de la información de entrega. */
-
-.btn-pagar-entrega {
-
-    /* Espacio superior */
-    margin-top: 22px;
-
-    /* Bordes menos redondos que el botón general */
-    border-radius: 8px;
-
-    /* Color rosado del botón */
-    background-color: #d3968c;
-}
-
-.btn-pagar-entrega:hover {
-
-    /* Color más oscuro al pasar el mouse */
-    background-color: #c77f75;
-}
-
-
-/*=====================================================
 RESUMEN DEL RAMO
 =====================================================*/
 /* Este bloque corresponde a los elementos internos
